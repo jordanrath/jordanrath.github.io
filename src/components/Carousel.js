@@ -18,11 +18,13 @@ const Carousel = ({ data, images, className: classNameProp, imgClassName, iconLe
     //add onclick capture
     const nextImage = useCallback((event) => {
         event.preventDefault();
+        event.stopPropogation();
         setCurrent(current === length - 1 ? 0 : current + 1);
     }, [setCurrent, current, length]);
 
     const prevImage = useCallback((event) => {
         event.preventDefault();
+        event.stopPropogation();
         setCurrent(current === 0 ? length - 1 : current - 1);
     }, [setCurrent, current, length]);
 
