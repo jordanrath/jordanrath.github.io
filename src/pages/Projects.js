@@ -86,20 +86,20 @@ const children = useMemo(() => {
           </div>
           </div>
           <div className='project'>
-            <img className='project-img' src='/projectImages/JSToDo.png' alt='JavaScript To Do App' />
+            <img className='project-img' src='/projectImages/weatherApp.png' alt='JavaScript To Do App' />
           <div className='project-context'>  
-            <h5>To Do List</h5>
-            <p>JavaScript / HTML / CSS</p>
+            <h5>Weather App</h5>
+            <p>ReactJS / CSS</p>
             <div className='project-btn-container'>
               <button onClick={handleOpenModal} project-id='4' className='project-btn'>LEARN MORE</button>
             </div>
           </div>
           </div>
           <div className='project'>
-            <img className='project-img' src='/projectImages/JSTechnicalDoc.png' alt='JavaScript Technical Documentation' />
+            <img className='project-img' src='/projectImages/pomodoroClock.png' alt='JavaScript Technical Documentation' />
           <div className='project-context'>  
-            <h5>Technical Documentation</h5>
-            <p>HTML / CSS</p>
+            <h5>Pomodoro Clock</h5>
+            <p>ReactJS / CSS</p>
             <div className='project-btn-container'>
               <button onClick={handleOpenModal} project-id='5' className='project-btn'>LEARN MORE</button>
             </div>
