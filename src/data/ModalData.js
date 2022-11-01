@@ -50,6 +50,7 @@ export const ModalData = [
                 name: 'Online Supermarket',
                 internalName: 'superMarket',
                 description: 'Supermarket is built with React, HTML and CSS.  Easily navigate through the store and add foods to your cart.  You can edit your cart when ready, you will be sent to checkout with Stripe integration.',
+                href: "https://jordanrath.github.io/supermarket/",
                 images: [                
                  {
                      image: '/modalImages/superMFrontPage.png',
