@@ -649,6 +649,7 @@ input:checked + .background-slider:before {
   top: 80%;
   /* color: var(--black); */
   color:var(--grey-200);
+  z-index: 1000;
 }
 
 .left-arrow:hover {
@@ -661,6 +662,7 @@ input:checked + .background-slider:before {
   top: 80%;
   /* color: var(--black); */
   color:var(--grey-200);
+  z-index: 1000;
 }
 
 .right-arrow:hover {
