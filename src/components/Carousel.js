@@ -14,11 +14,13 @@ const Carousel = ({ data, images, className: classNameProp, imgClassName, iconLe
     const leftBtnClass = classNames(['left-arrow', btnClassName]);
     const rightBtnClass = classNames(['right-arrow', btnClassName]);
     
-    const nextImage = useCallback(() => {
+    const nextImage = useCallback((event) => {
+        event.preventDefault();
         setCurrent(current === length - 1 ? 0 : current + 1);
     }, [setCurrent, current, length]);
 
-    const prevImage = useCallback(() => {
+    const prevImage = useCallback((event) => {
+        event.preventDefault();
         setCurrent(current === 0 ? length - 1 : current - 1);
     }, [setCurrent, current, length]);
 
