@@ -6,7 +6,7 @@ export const ModalData = [
                 name: 'Band Website',
                 internalName: 'bandWebsite',
                 description: 'The Band Website is built with JavaScript, HTML and CSS.  It features imbedded video, links to get tickets, social media and a shopping cart.',
-                href: "https://jordanrath.github.io/index.html",
+                href: "https://jordanrath.github.io/band-store-project/index.html",
                 images: [
                  {
                      image: '/modalImages/bandFrontPage.png',
@@ -28,6 +28,7 @@ export const ModalData = [
                 name: 'Food Tracker',
                 internalName: 'foodLog',
                 description: 'Food Tracker is built with JavaScript, HTML and CSS.  With Food Tracker you can select from a number of foods and customize the macro nutrients that food has.  Once a food has been added Food Tracker will calculate the total calories and add the results to a graph that stores data of all foods that have been added.',
+                href: "https://jordanrath.github.io/supermarket/",
                 images: [ 
                  {
                      image: '/modalImages/foodlogFrontPage.png',
