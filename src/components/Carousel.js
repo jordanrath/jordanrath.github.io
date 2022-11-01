@@ -14,6 +14,8 @@ const Carousel = ({ data, images, className: classNameProp, imgClassName, iconLe
     const leftBtnClass = classNames(['left-arrow', btnClassName]);
     const rightBtnClass = classNames(['right-arrow', btnClassName]);
     
+
+    //add onclick capture
     const nextImage = useCallback((event) => {
         event.preventDefault();
         setCurrent(current === length - 1 ? 0 : current + 1);
@@ -39,8 +41,8 @@ const memoizedMap = useMemo(() => {
                     </div>         
                 )
             })}
-            <FontAwesomeIcon className={leftBtnClass} icon={iconLeft} onClick={prevImage}/>
-            <FontAwesomeIcon className={rightBtnClass} icon={iconRight} onClick={nextImage}/>
+            <FontAwesomeIcon className={leftBtnClass} icon={iconLeft} onClickCapture={prevImage}/>
+            <FontAwesomeIcon className={rightBtnClass} icon={iconRight} onClickCapture={nextImage}/>
         </div>
       )
     
