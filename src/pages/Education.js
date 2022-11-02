@@ -10,11 +10,11 @@ const Education = () => {
   return (
     <div className='education-container'>
         <div className='education-div'>
-            <div data-aos="fade-right">
+            <div data-aos="zoom-in-down">
               <h3>Languages and Frameworks</h3>
               <div className='education-bar'></div>
             </div>
-            <div className='education-list-div' data-aos="flip-right">
+            <div className='education-list-div' data-aos="zoom-in-down">
               <ul className='languages'>
                 <li><FontAwesomeIcon className='svgIcon' icon="fa-brands fa-js-square" />Javascript</li>
                 <li><FontAwesomeIcon className='svgIcon' icon="fa-brands fa-python" />Python</li>
@@ -29,7 +29,7 @@ const Education = () => {
             </div>
         </div>
         <div className='cert-div'>
-          <div data-aos="fade-down">
+          <div data-aos="zoom-in-down">
               <h3>Certifications</h3>
               <div className='education-bar'></div>
           </div>  
@@ -37,11 +37,11 @@ const Education = () => {
           <Carousel className='image-section' imgClassName='cert-img' btnClassName='center-btn'  images={educationData} iconLeft="fa-solid fa-angle-left" iconRight="fa-solid fa-angle-right" aosEffect="flip-down" />
         </div> 
         <div className='education-div'>
-            <div data-aos="fade-left">
+            <div data-aos="zoom-in-down">
               <h3>Skills and Strengths</h3>
               <div className='education-bar'></div>
             </div>
-          <div className='education-list-div education-expanded' data-aos="flip-right">
+          <div className='education-list-div education-expanded' data-aos="zoom-in-down">
             <ul className='skills'>
               <li><FontAwesomeIcon className='svgIcon' icon="fa-solid fa-arrow-right-to-bracket" />Desire to learn</li>
               <li><FontAwesomeIcon className='svgIcon' icon="fa-solid fa-arrow-right-to-bracket" />Emphasis on quality</li>

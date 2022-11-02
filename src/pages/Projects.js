@@ -50,11 +50,11 @@ const children = useMemo(() => {
     <>
       {modalJSX}
       <div>
-        <h1 data-aos="fade-left">PROJECTS</h1>
-        <div className='project-header-bar header-bar' data-aos="fade-right"></div>
+        <h1 data-aos="zoom-in-down">PROJECTS</h1>
+        <div className='project-header-bar header-bar' data-aos="zoom-in-down"></div>
       </div>
       <div className='projects-div-frame' >
-        <div className='projects-div' data-aos="zoom-out-up">
+        <div className='projects-div' data-aos="zoom-in-down">
           <div className='project'>
             <img className='project-img' src='/projectImages/JSwebsite.png' alt='JavaScript Website' />
           <div className='project-context'>

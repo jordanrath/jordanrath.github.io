@@ -3,8 +3,8 @@ import React from 'react';
  const Contact = () => {
 return (
   <section className='contact-section' id='contact'>
-    <h1 data-aos="fade-right">CONTACT</h1>
-    <div className='contact-header-bar header-bar' data-aos="fade-left"></div>
+    <h1 data-aos="zoom-in-down">CONTACT</h1>
+    <div className='contact-header-bar header-bar' data-aos="zoom-in-down"></div>
     <form className='form-container' action="https://formsubmit.co/rath.jordan@icloud.com" method="POST" data-aos="zoom-in-down">
         <label htmlFor="name" ></label>
           <input type="text" id="name" placeholder='Name' required />
