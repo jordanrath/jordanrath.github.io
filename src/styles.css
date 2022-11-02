@@ -379,7 +379,7 @@ input:checked + .background-slider:before {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-bottom:140px;
+  padding-bottom: 140px;
   position: relative;
   max-width: 500px;
 }
@@ -391,6 +391,7 @@ input:checked + .background-slider:before {
   align-items: center;
   height: inherit;
   width: 100%;
+  min-height: 350px;
 }
 
 .slide {
@@ -1416,6 +1417,10 @@ section {
   .about-context p {
     font-size: 16px;
     line-height: 25px;
+  }
+
+  .about-image {
+    max-height: 260px;
   }
 
   .education {

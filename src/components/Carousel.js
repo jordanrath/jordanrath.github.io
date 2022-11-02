@@ -37,7 +37,7 @@ const memoizedMap = useMemo(() => {
                         className={index === current ? 'slide active' : 'slide'}
                         key={index}
                         >
-                        {index === current && (<img src={image} alt={alt} className={imgClassName} data-aos={aosImgEffect} data-aos-duration="300"/>)}   
+                        {index === current && (<img src={image} alt={alt} className={imgClassName} data-aos={aosImgEffect} data-aos-duration="500"/>)}   
                         <div className='carousel-circles-div'>
                         </div>
                     </div>         

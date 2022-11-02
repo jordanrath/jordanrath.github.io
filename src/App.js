@@ -17,7 +17,7 @@ const App = () => {
   useEffect(() => {
     AOS.init({
       once: true,
-      duration: 1000,
+      duration: 500,
       offset: 100,
       easing: 'ease-in-out-sine',
     });
