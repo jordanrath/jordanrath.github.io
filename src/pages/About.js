@@ -4,8 +4,8 @@ import React from 'react'
 const About = () => {
   return (
     <div className='about about-div section' id='about'>
-      <h3 data-aos-duration="2000" data-aos="zoom-in-down">Hello, I'm Jordan Rath</h3>
-      <h3 data-aos-duration="2000" data-aos="zoom-in-down">a developer</h3>
+      <h3 data-aos="zoom-in-down">Hello, I'm Jordan Rath</h3>
+      <h3 data-aos="zoom-in-down">a developer</h3>
       <div className='about-context'>
         <img data-aos="zoom-in-down" className='about-image' src='/images/myImage.jpg' alt='My dog Cooper and I'></img>
        <div data-aos="zoom-in-down" className='about-text'>

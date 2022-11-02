@@ -150,7 +150,6 @@ a {
 }
 
 .home,
-.about,
 .education,
 .projects,
 .contact {
@@ -159,6 +158,13 @@ a {
   text-align: center;
   font-size: 2rem;
   overflow-x: hidden;
+}
+
+.about {
+  min-height: 40vh;
+  text-align: center;
+  font-size: 2rem;
+  /* overflow-x: hidden; */
 }
 
 .active {
@@ -242,6 +248,8 @@ input:checked + .background-slider:before {
 
 /* ------------------------- About ------------------------- */
 .about-div {
+  display: flex;
+  flex-direction: column;
   color: white;
   text-shadow: .5px .5px 2px #000000;
   padding-top: 220px;
@@ -260,13 +268,14 @@ input:checked + .background-slider:before {
   padding-left: 25%;
   margin: 0;
   padding-top: 150px;
+  height: fit-content;
   width: 50%;
   gap: 30px;
 }
 
 .about-text {
   display: flex;
-  animation: left-to-right 1s ease-in-out forwards;
+  /* animation: left-to-right 1s ease-in-out forwards; */
 }
 
 .about-text p {
@@ -1209,7 +1218,7 @@ section {
   }
 }
 
-@media only screen and (max-width: 1850px) {
+@media only screen and (max-width: 1950px) {
   .education-container {
     padding-left: 50px;
     padding-right: 50px;
@@ -1513,7 +1522,7 @@ section {
   }
 
   .modal .modal-description {
-height: fit-content;
+    height: fit-content;
   }
 
   .modal .modal-description p {
@@ -1545,13 +1554,68 @@ height: fit-content;
   }
 }
 
+@media only screen and (max-width:300px) {
+  html {
+    font-size: 10px;
+  }
+
+  .about-context{
+    width: 100%;
+    padding: unset;
+  }
+
+  .about-context p {
+    font-size: 13px;
+  }
+
+  .education-div .skills {
+    display: inherit;
+    padding-left: 15%;
+  }
+
+  .project-img {
+    min-width: unset;
+  }
+
+  .project-context {
+    top: unset;
+    height: 100%;
+  }
+
+  .project-btn-container {
+    padding-top: 50px;
+  }
+
+  .modal {
+    width: 250px;
+  }
+
+  .modal-img {
+    min-width: 250px;
+    height: 240px;
+  }
+
+  .navbar {
+    display: flex;
+    height: 80px;
+    width: 100%;
+    padding: unset;
+  }
+
+  .navTitle {
+    display: flex;
+    width: 70%;
+    height: 100%;
+  }
+}
+
 /* @media only screen and (max-width:400px) {
   .project-img {
     width: 100px;
   }
 } */
 
-@media only screen and (max-width: 340px) {
+/* @media only screen and (max-width: 340px) {
   .cert-div {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -1590,10 +1654,10 @@ height: fit-content;
   .right-arrow {
     left: 80%;
   }
-}
-
+} */
+/* 
 @media only screen and (max-width: 300px) {
   .project-img {
     width: 100%;
   }
-}
+} */
