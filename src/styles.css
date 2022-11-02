@@ -736,13 +736,15 @@ input:checked + .background-slider:before {
   max-width: 150px;
   min-width: 100px;
   padding: 10px 15px;
+  border-radius: 6px;
   float: right;
   cursor: pointer;
+  transition: all 0.5s;
 }
 
 .view-project:hover {
-  border: 3px solid var(--grey-dark);
-  color: red;
+  border: 2px solid #1D6ACF;
+  background-color: #1D6ACF;
 }
 
 .close-modal {

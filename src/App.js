@@ -17,8 +17,8 @@ const App = () => {
   useEffect(() => {
     AOS.init({
       once: true,
-      duration: 1500,
-      offset: 500,
+      duration: 1000,
+      offset: 100,
       easing: 'ease-in-out-sine',
     });
     AOS.refresh();
