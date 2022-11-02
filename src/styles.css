@@ -391,7 +391,7 @@ input:checked + .background-slider:before {
   align-items: center;
   height: inherit;
   width: 100%;
-  min-height: 350px;
+  /* min-height: 350px; */
 }
 
 .slide {
@@ -1220,20 +1220,29 @@ section {
 }
 
 @media only screen and (max-width: 1950px) {
+  .about-context p {
+    font-size: 18px;
+    line-height: 36px;
+  }
+
   .education-container {
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .education-list-div li {
+    font-size: 18px;
   }
 
   .education-expanded {
-    padding-left: 50px;
+    padding-left: unset
   }
 }
 
 @media only screen and (max-width: 1600px) {
-  .education-expanded {
+  /* .education-expanded {
     padding-left: 40px;
-  }
+  } */
 }
 
 @media only screen and (max-width: 1525px) {
@@ -1244,13 +1253,15 @@ section {
 }
 
 @media only screen and (max-width: 1350px) {
-  .education-expanded {
+  /* .education-expanded {
     padding-left: 100px;
-  }
+  } */
 
   .about-context p {
     padding-right: 10%;
     min-width: 250px;
+    font-size: 15px;
+    line-height: 30px;
   }
 
   .about-image {
@@ -1455,6 +1466,7 @@ section {
 
   .slider {
     width: 95%;
+    min-height: unset;
   }
 
   .left-arrow.center-btn {

@@ -7,11 +7,11 @@ return (
     <div className='contact-header-bar header-bar' data-aos="zoom-in-down"></div>
     <form className='form-container' action="https://formsubmit.co/rath.jordan@icloud.com" method="POST" data-aos="zoom-in-down">
         <label htmlFor="name" ></label>
-          <input type="text" id="name" placeholder='Name' required />
+          <input type="text" id="name" placeholder='Name' name="name" required />
         <label htmlFor="email"></label> 
-          <input type="email" id="email" placeholder='Enter Email' required />
+          <input type="email" id="email" placeholder='Enter Email' name="email" required />
         <label htmlFor="message"></label>
-          <textarea id="message" placeholder='Your Message' required />
+          <textarea id="message" name="message" placeholder='Your Message' required />
         <div className='btn-container'> 
           <button type="submit" className='btn'>SUBMIT</button>
         </div> 

@@ -41,37 +41,6 @@ const App = () => {
 
    return (
     <main id='home'>
-    {/* <BackgroundParticles /> */}
-    
-{/* <div className="area" >
-<ul className="shapes">
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>     
-            </ul> */}
       <Navbar {...refProps}/>
       <BackgroundSelector />
       <section className='about' id='about' ref={aboutRef}>
@@ -89,7 +58,6 @@ const App = () => {
       <section className='footer'>
         <Footer />
       </section>     
-      {/* </div > */}
     </main>
    )
 }
