@@ -2,10 +2,6 @@ import React, { useCallback, useMemo, useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import classNames from 'classnames';
 
-//-----------------To Do 8/14/22----------------//
-//Memoize the array.map()... right now it calls .map on every render...
-//put github links on project modals...
-//add the initial size and on error state and on load spinner to the image
 //image supports on load and on error...  hook into in with callback() to set state in component to be 'loaded' 'loading' etc... spinner, color change, etc
 const Carousel = ({ data, images, className: classNameProp, imgClassName, iconLeft, iconRight, btnClassName, aosEffect, aosImgEffect, aosDuration }) => {
     const [current, setCurrent] = useState(0);
