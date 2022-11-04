@@ -49,7 +49,7 @@ const Education = () => {
               <li><FontAwesomeIcon className='svgIcon' icon="fa-solid fa-arrow-right-to-bracket" />Clear and concise communication</li>
               <li><FontAwesomeIcon className='svgIcon' icon="fa-solid fa-arrow-right-to-bracket" />Responsive design</li>
               <li><FontAwesomeIcon className='svgIcon' icon="fa-solid fa-arrow-right-to-bracket" />Purely functional components</li>
-              <li><FontAwesomeIcon className='svgIcon' icon="fa-solid fa-arrow-right-to-bracket" />Good work ethic</li>
+              <li><FontAwesomeIcon className='svgIcon' icon="fa-solid fa-arrow-right-to-bracket" />Strong work ethic</li>
               <li><FontAwesomeIcon className='svgIcon' icon="fa-solid fa-arrow-right-to-bracket" />Problem-solving</li>
             </ul>
           </div>
