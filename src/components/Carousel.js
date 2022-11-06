@@ -1,6 +1,7 @@
 import React, { useCallback, useMemo, useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import classNames from 'classnames';
+import ImageLoader from './ImageLoader';
 
 //image supports on load and on error...  hook into in with callback() to set state in component to be 'loaded' 'loading' etc... spinner, color change, etc
 const Carousel = ({ data, images, className: classNameProp, imgClassName, iconLeft, iconRight, btnClassName, aosEffect, aosImgEffect, aosDuration }) => {
@@ -27,13 +28,20 @@ const Carousel = ({ data, images, className: classNameProp, imgClassName, iconLe
 const memoizedMap = useMemo(() => {
     return (
         <div className={className} data-aos={aosEffect} data-aos-duration={aosDuration}>
-            {images.map(({ image, alt }, index) => {
+            {images.map(({ image, alt, placeholderImage }, index) => {
                 return (
                     <div
                         className={index === current ? 'slide active' : 'slide'}
                         key={index}
                         >
-                        {index === current && (<img src={image} alt={alt} className={imgClassName} data-aos={aosImgEffect} data-aos-duration="500"/>)}   
+                        {index === current && (
+                        <ImageLoader 
+                            src={image} 
+                            placeholderImage={placeholderImage} 
+                            alt={alt} 
+                            imgClassName={imgClassName} 
+                            // aosImgEffect={aosImgEffect}  
+                        />)}   
                         <div className='carousel-circles-div'>
                         </div>
                     </div>         
