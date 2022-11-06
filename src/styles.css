@@ -408,6 +408,7 @@ input:checked + .background-slider:before {
   /* object-fit: contain;
   display: flex;
   position: relative; */
+  min-width: 370px;
   max-width: 100%;
   height: auto;
   /* min-width: 100%;
@@ -1304,9 +1305,12 @@ section {
     height: 260px;
   }
 
+  .modal
+
   .left-arrow,
   .right-arrow {
-    font-size: 1.5rem;
+    font-size: 3.5rem;
+    top: 160px;
   }
 
   .btn {
