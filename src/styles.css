@@ -1153,6 +1153,11 @@ section {
     height: 100%;
     width: 100%;
   }
+
+  .about-image-container {
+    width: unset;
+    height: unset;
+  }
   
   .about-text {
     width: 80%;
