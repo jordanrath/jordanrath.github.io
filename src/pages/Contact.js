@@ -15,7 +15,6 @@ return (
         <div className='btn-container'> 
           <button type="submit" className='btn'>SUBMIT</button>
         </div> 
-        {/* <input type="hidden" name="_next" value="http://localhost:3000/pages/thankyou.html"></input> */}
     </form>
   </section>
   );
