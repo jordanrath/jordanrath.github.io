@@ -1,4 +1,4 @@
-import { React, useState, useEffect } from 'react'
+import React, { useState, useEffect } from 'react'
 
 const NavbarLink = (props) => {
   const [active, setActive] = useState(false);

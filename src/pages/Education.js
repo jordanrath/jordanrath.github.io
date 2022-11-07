@@ -32,8 +32,7 @@ const Education = () => {
           <div data-aos="zoom-in-down">
               <h3>Certifications</h3>
               <div className='education-bar'></div>
-          </div>  
-          {/* render Carousel and give it the educationData as props... will need to add unique ID and className as props later... */}
+          </div>
           <Carousel className='image-section' imgClassName='cert-img' btnClassName='center-btn'  images={educationData} iconLeft="fa-solid fa-angle-left" iconRight="fa-solid fa-angle-right" aosEffect="flip-down" />
         </div> 
         <div className='education-div'>

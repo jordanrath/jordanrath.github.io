@@ -16,13 +16,11 @@ const About = () => {
       <h3 data-aos="zoom-in-down">a developer</h3>
       <div className='about-context'>
         <div className='about-image-container' data-aos={aosImgEffect}>
-          {/* <img data-aos="zoom-in-down" className='about-image' src='/images/myImage.jpg' alt='My dog Cooper and I'></img> */}
           <ImageLoader 
             src={src} 
             placeholderImage={placeholderImage}
             alt={alt}
             imgClassName={imgClassName}
-            //aosImgEffect={aosImgEffect}
           />
         </div>
        <div data-aos="zoom-in-down" className='about-text'>
