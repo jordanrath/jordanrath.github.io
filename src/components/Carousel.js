@@ -52,7 +52,7 @@ const memoizedMap = useMemo(() => {
         </div>
       )
     
-}, [images, current, className, nextImage, prevImage, imgClassName, iconLeft, iconRight, leftBtnClass, rightBtnClass, aosEffect, aosImgEffect, aosDuration]);
+}, [images, current, className, nextImage, prevImage, imgClassName, iconLeft, iconRight, leftBtnClass, rightBtnClass, aosEffect, aosDuration]);
 
 if (!Array.isArray(images) || images.length <= 0) {
     return null;
