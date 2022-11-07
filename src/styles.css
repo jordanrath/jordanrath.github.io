@@ -1156,6 +1156,45 @@ section {
     font-size: x-large;
     padding-top: 70px;
   }
+
+  .modal {
+    height: fit-content;
+    width: 330px;
+    padding: unset;
+  }
+
+  .modal .project-title {
+    display: flex;
+    width: 100%;
+  }
+
+  .modal .project-title h2 {
+    display: inherit;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: unset;
+    font-size: 30px
+  }
+
+  .modal .modal-description {
+    height: fit-content;
+  }
+
+  .modal .modal-description p {
+    padding: 15px;
+    height: unset;
+    font-size: 16px;
+  }
+
+  .modal .modal-btn-container {
+    padding-bottom: 10px;
+  }
+
+  .modal-img {
+    min-width: 330px;
+    height: 260px;
+  }
 }
 
 @media only screen and (max-width: 425px) {
@@ -1436,10 +1475,15 @@ section {
   .project-context {
     top: unset;
     height: 100%;
+    font-size: 2.8rem;
+  }
+
+  .project-context p {
+    font-size: 15px;
   }
 
   .project-btn-container {
-    padding-top: 50px;
+    padding-top: 75px;
   }
 
   .modal {
@@ -1449,6 +1493,10 @@ section {
   .modal-img {
     min-width: 250px;
     height: 240px;
+  }
+
+  .slide {
+    height: unset;
   }
 
   @media only screen and (max-width: 350px) {
@@ -1476,6 +1524,18 @@ section {
       flex-direction: column;
       justify-content: flex-end;
       align-items: flex-end;
+    }
+
+    .project-context {
+      font-size: 2.5rem;
+    }
+  
+    .project-context p {
+      font-size: 12px;
+    }
+  
+    .project-btn-container {
+      padding-top: 50px;
     }
   }
 }
