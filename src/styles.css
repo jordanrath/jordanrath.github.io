@@ -1465,6 +1465,8 @@ section {
 
   .cert-img {
     min-width: 100%;
+    height: unset;
+    max-height: unset;
   }
 
   .education-div .skills {
