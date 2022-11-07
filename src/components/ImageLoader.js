@@ -19,7 +19,7 @@ const ImageLoader = ({ placeholderImage, src, alt, imgClassName, aosImgEffect })
       src={imgSrc}
       alt={alt || ''}
       className={`${imgClassName} ${customClass}`}
-      data-aos={aosImgEffect}
+      //data-aos={aosImgEffect}
       />
     </>
   )
