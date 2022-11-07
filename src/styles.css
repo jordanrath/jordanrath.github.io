@@ -964,6 +964,16 @@ section {
   .education-expanded {
     padding-left: unset
   }
+
+  .modal-img {
+    max-height: unset;
+  }
+}
+
+@media only screen and (max-width: 5000px) {
+  .modal-img {
+    max-height: unset;
+  }
 }
 
 @media only screen and (max-width: 1525px) {
@@ -1383,6 +1393,10 @@ section {
     padding-top: 20px;
     font-size: 13px;
     min-width: 200px;
+  }
+
+  .cert-img {
+    min-width: unset;
   }
 
   .education-div .skills {

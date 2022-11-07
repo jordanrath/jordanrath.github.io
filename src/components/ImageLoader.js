@@ -11,18 +11,6 @@ const ImageLoader = ({ placeholderImage, src, alt, imgClassName, aosImgEffect })
     };
   }, [src]);
 
-  // useEffect(() => {
-  //   const img = new Image();
-  //   img.onerror = (e) => {
-  //     debugger;
-  //   }
-  //   img.onload = (e) => {
-  //     debugger;
-  //     setImgSrc(src);
-  //   };
-  //   img.src = src;
-  // }, [src]);
-
   const customClass = (placeholderImage && imgSrc === placeholderImage ? "loading" : "loaded");
   
     return (
@@ -31,7 +19,7 @@ const ImageLoader = ({ placeholderImage, src, alt, imgClassName, aosImgEffect })
       src={imgSrc}
       alt={alt || ''}
       className={`${imgClassName} ${customClass}`}
-      // data-aos={aosImgEffect}
+      data-aos={aosImgEffect}
       />
     </>
   )

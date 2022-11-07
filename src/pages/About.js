@@ -22,7 +22,7 @@ const About = () => {
             placeholderImage={placeholderImage}
             alt={alt}
             imgClassName={imgClassName}
-            // aosImgEffect={aosImgEffect}
+            aosImgEffect={aosImgEffect}
           />
         </div>
        <div data-aos="zoom-in-down" className='about-text'>

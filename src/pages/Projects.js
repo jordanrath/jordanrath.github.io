@@ -106,9 +106,9 @@ const children = useMemo(() => {
           </div>
           </div>
           <div className='project'>
-            <img className='project-img' src='/projectImages/JSCalculator.png' alt='JavaScript To Do List' />
+            <img className='project-img' src='/projectImages/todo-list.png' alt='JavaScript To Do List' />
           <div className='project-context'>
-            <h5>Calculator</h5>
+            <h5>To Do List</h5>
             <p>JavaScript / HTML / CSS</p>
             <div className='project-btn-container'>
               <button onClick={handleOpenModal} project-id='6' className='project-btn'>LEARN MORE</button>

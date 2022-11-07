@@ -40,7 +40,7 @@ const memoizedMap = useMemo(() => {
                             placeholderImage={placeholderImage} 
                             alt={alt} 
                             imgClassName={imgClassName} 
-                            // aosImgEffect={aosImgEffect}  
+                            aosImgEffect={aosImgEffect}  
                         />)}   
                         <div className='carousel-circles-div'>
                         </div>

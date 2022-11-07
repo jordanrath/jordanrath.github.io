@@ -96,4 +96,17 @@ export const ModalData = [
                  },
                 ]
             },
+            {
+                id: 6,
+                name: 'To Do List',
+                internalName: 'todoList',
+                description: 'To Do list build with JavaScript, HTML and CSS.  Add things to do and remove cross them out or remove them when you\'re done!',
+                href: "https://jordanrath.github.io/todo-list/",
+                images: [                
+                 {
+                     image: '/modalImages/todo-list.png',
+                     alt: 'To Do List main page.',
+                 },
+                ]
+            },
 ];
