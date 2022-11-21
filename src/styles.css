@@ -1498,14 +1498,6 @@ section {
     top: 170px;
   }
 
-  /* .slide {
-    height: unset;
-  } */
-
-  /* .cert-div .slider .slide {
-    min-width: 250px;
-  } */
-
   @media only screen and (max-width: 350px) {
     .navbar {
       display: flex;
