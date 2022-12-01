@@ -12,7 +12,7 @@ const Carousel = ({ data, images, className: classNameProp, imgClassName, iconLe
     const rightBtnClass = classNames(['right-arrow', btnClassName]);
     
 
-    //add onclick capture
+    //add onclick capture for button
     const nextImage = useCallback((event) => {
         event.preventDefault();
         event.stopPropagation();
