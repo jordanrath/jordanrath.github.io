@@ -4,7 +4,7 @@ import classNames from 'classnames';
 import ImageLoader from './ImageLoader';
 
 //image supports on load and on error...  hook into in with callback() to set state in component to be 'loaded' 'loading' etc... spinner, color change, etc
-const Carousel = ({ data, images, className: classNameProp, imgClassName, iconLeft, iconRight, btnClassName, aosEffect, aosImgEffect, aosDuration }) => {
+const Carousel = ({images, className: classNameProp, imgClassName, iconLeft, iconRight, btnClassName, aosEffect, aosImgEffect, aosDuration }) => {
     const [current, setCurrent] = useState(0);
     const length = images.length;
     const className = classNames(['slider', classNameProp]);
