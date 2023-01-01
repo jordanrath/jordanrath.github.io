@@ -46,9 +46,11 @@ const memoizedMap = useMemo(() => {
                     </div>         
                 )
             })}
-            <FontAwesomeIcon className={leftBtnClass} icon={iconLeft} onClickCapture={prevImage}/>
-            <FontAwesomeIcon className={rightBtnClass} icon={iconRight} onClickCapture={nextImage}/>
-        </div>
+            {/* <FontAwesomeIcon className={leftBtnClass} icon={iconLeft} onClickCapture={prevImage}/> */}
+            {/* <FontAwesomeIcon className={rightBtnClass} icon={iconRight} onClickCapture={nextImage}/> */}
+            {images.length > 1 ? <FontAwesomeIcon className={leftBtnClass} icon={iconLeft} onClickCapture={prevImage}/> : null}
+            {images.length > 1 ? <FontAwesomeIcon className={rightBtnClass} icon={iconRight} onClickCapture={nextImage}/> : null}
+            </div>
       )
     
 }, [images, current, className, nextImage, prevImage, imgClassName, iconLeft, iconRight, leftBtnClass, rightBtnClass, aosEffect, aosDuration]);

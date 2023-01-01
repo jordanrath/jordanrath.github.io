@@ -185,7 +185,7 @@ a {
 }
 
 .active:hover {
-  opacity: .75;
+  opacity: 1;
 }
 
 .section {
@@ -660,10 +660,11 @@ input:checked + .background-slider:before {
   top: 80%;
   color: var(--grey-200);
   z-index: 1000;
+  transition: all 0.5s;
 }
 
 .left-arrow:hover {
-  color: #595959;
+  color: var(--blue);
 }
 
 .right-arrow {
@@ -672,10 +673,11 @@ input:checked + .background-slider:before {
   top: 80%;
   color: var(--grey-200);
   z-index: 1000;
+  transition: all 0.5s;
 }
 
 .right-arrow:hover {
-  color: #595959;
+  color: var(--blue);
 }
 
 .project-title {
@@ -706,6 +708,7 @@ input:checked + .background-slider:before {
 .modal-description {
   display: flex;
   flex-grow: 1;
+  font-size: 16px;
 }
 
 .modal-btn-container {
@@ -763,6 +766,7 @@ border: none;
 font-size: x-large;
 cursor: pointer;
 background-color: var(--grey-50);
+transition: all 0.5s;
 }
 
 .close-modal:hover {
