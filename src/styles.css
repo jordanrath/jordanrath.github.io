@@ -467,7 +467,7 @@ input:checked + .background-slider:before {
   min-height: 720px;
   height: 100%;
   padding-top: 200px;
-  padding-bottom: 300px;
+  padding-bottom: 350px;
 }
 
 .projects-section h1 {
@@ -775,7 +775,7 @@ transition: all 0.5s;
 
 /* ------------------------- Contact ------------------------- */
 .contact-section {
-  padding: 150px 0 200px 0;
+  padding: 0px 0 300px 0;
 }
 
 .contact-section h1 {
