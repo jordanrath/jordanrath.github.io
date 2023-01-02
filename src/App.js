@@ -10,6 +10,7 @@
  import Contact from './pages/Contact';
  import Footer from "./components/Footer";
 import BackgroundSelector from './components/BackgroundSelector';
+import Loader from './components/Loader';
  
 
 const App = () => {
