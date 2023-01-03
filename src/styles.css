@@ -1292,6 +1292,10 @@ body {
     min-width: 330px;
     height: 260px;
   }
+
+  .btn {
+    max-width: unset;
+  }
 }
 
 @media only screen and (max-width: 425px) {
@@ -1461,10 +1465,6 @@ body {
   .right-arrow {
     font-size: 3.5rem;
     top: 160px;
-  }
-
-  .btn {
-    max-width: 200px;
   }
 
   .form-container {
@@ -1646,6 +1646,19 @@ body {
       align-items: flex-end;
     }
 
+    .about {
+      padding-top: 50px;
+    }
+
+    .education-container {
+      padding-top: 100px;
+    }
+
+    .projects-section {
+      padding-top: 40px;
+      padding-bottom: 150px;
+    }
+
     .project-context {
       font-size: 2.5rem;
     }
@@ -1656,6 +1669,10 @@ body {
   
     .project-btn-container {
       padding-top: 50px;
+    }
+
+    .contact-section {
+      padding-bottom: 20px;
     }
   }
 }
