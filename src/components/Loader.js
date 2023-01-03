@@ -1,13 +1,17 @@
 import React from 'react'
 
-const Loader = () => {
+const Loader = ({dotCount = 5, placeholderText = "JR"}) => {
 
-  const loader = document.querySelector('.loader');
-  const showLoader = () => loader.classList.remove('loader--hide');
-  const hideLoader = () => loader.classList.add('loader--hide');
+  const finalDotCount = Math.min(Math.max(dotCount, 3), 6)
+
+  const dots = Array.from(Array(finalDotCount)).map((currentValue, currentIndex) => (<div key={`loader-dot-${currentIndex}`}></div>));
+  const placeholder = placeholderText;
 
   return (
-    <div class="loader"><div></div><div></div><div></div><div></div></div>
+    <div className='loader-container'>
+      <div className="logo">{placeholder}</div>
+      <div className="loader">{dots}</div>
+    </div>
   )
 }
 

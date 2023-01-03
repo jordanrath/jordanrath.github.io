@@ -48,6 +48,7 @@ const memoizedMap = useMemo(() => {
             })}
             {/* <FontAwesomeIcon className={leftBtnClass} icon={iconLeft} onClickCapture={prevImage}/> */}
             {/* <FontAwesomeIcon className={rightBtnClass} icon={iconRight} onClickCapture={nextImage}/> */}
+            {/* write as const and insert that way */}
             {images.length > 1 ? <FontAwesomeIcon className={leftBtnClass} icon={iconLeft} onClickCapture={prevImage}/> : null}
             {images.length > 1 ? <FontAwesomeIcon className={rightBtnClass} icon={iconRight} onClickCapture={nextImage}/> : null}
             </div>

@@ -9,9 +9,7 @@
  import Education from './pages/Education';
  import Contact from './pages/Contact';
  import Footer from "./components/Footer";
-import BackgroundSelector from './components/BackgroundSelector';
-import Loader from './components/Loader';
- 
+import BackgroundSelector from './components/BackgroundSelector'; 
 
 const App = () => {
 
