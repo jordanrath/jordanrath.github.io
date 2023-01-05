@@ -1296,6 +1296,13 @@ body {
   .btn {
     max-width: unset;
   }
+
+  input[type=text],
+  input[type=email],
+  textarea[id=message],
+  .btn {
+    font-size: 16px;
+  }
 }
 
 @media only screen and (max-width: 425px) {
@@ -1408,6 +1415,10 @@ body {
     margin: 20px 4px 12px 4px ;
   }
 
+  .projects-section {
+    padding-top: 100px;
+  }
+
   .projects-section h1 {
     padding-top: 60px;
   }
@@ -1512,6 +1523,10 @@ body {
     align-items: baseline;
   }
 
+  .contact-section {
+    padding-bottom: 150px;
+  }
+
   .contact-info-div {
     flex-direction: row;
     padding-top: 10px;
@@ -1574,6 +1589,7 @@ body {
 
   .projects-section {
     padding-top: 0px;
+    padding-bottom: 300px;
   }
 
   .project-img {
@@ -1601,7 +1617,8 @@ body {
   }
 
   .contact-section {
-    padding-bottom: 100px;
+    padding-bottom: 0px;
+    padding-top: 20px;
   }
 
   @media only screen and (max-width: 350px) {
