@@ -27,5 +27,4 @@ root.render(
 
 // remove loader once app is rendered
 loader.unmount();
-
 }, 1500);
