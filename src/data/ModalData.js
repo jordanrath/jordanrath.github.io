@@ -28,7 +28,7 @@ export const ModalData = [
                 name: 'Food Tracker',
                 internalName: 'foodLog',
                 description: 'Food Tracker is built with JavaScript, HTML and CSS.  With Food Tracker you can select from a number of foods and customize the macro nutrients that food has.  Once a food has been added Food Tracker will calculate the total calories and add the results to a graph that stores data of all foods that have been added.',
-                href: "https://jordanrath.github.io/nutrition-log/?",
+                href: "https://jordanrath.github.io/nutrition-tracker/",
                 images: [ 
                  {
                      image: '/modalImages/foodlogFrontPage.png',
