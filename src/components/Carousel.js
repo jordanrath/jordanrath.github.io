@@ -47,9 +47,8 @@ const memoizedMap = useMemo(() => {
                     </div>         
                 )
             })}
-            {/* <FontAwesomeIcon className={leftBtnClass} icon={iconLeft} onClickCapture={prevImage}/> */}
-            {/* <FontAwesomeIcon className={rightBtnClass} icon={iconRight} onClickCapture={nextImage}/> */}
             {/* write as const and insert that way */}
+            {/* check if how many images are in the carousel if there is more than 1 add an arrow */}
             {images.length > 1 ? <FontAwesomeIcon className={leftBtnClass} icon={iconLeft} onClickCapture={prevImage}/> : null}
             {images.length > 1 ? <FontAwesomeIcon className={rightBtnClass} icon={iconRight} onClickCapture={nextImage}/> : null}
             </div>
