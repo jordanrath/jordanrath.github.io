@@ -56,9 +56,9 @@ const children = useMemo(() => {
       <div className='projects-div-frame' >
         <div className='projects-div' data-aos="zoom-in-down">
           <div className='project'>
-            <img className='project-img' src='/projectImages/JSwebsite.png' alt='JavaScript Website' />
+            <img className='project-img' src='/projectImages/JSfoodTracker.png' alt='JavaScript Store' />
           <div className='project-context'>
-            <h5>Band Website</h5>
+            <h5>Nutrition Tracker</h5>
             <p>JavaScript / HTML / CSS</p>
             <div className='project-btn-container' id='new'>
               <button onClick={handleOpenModal} project-id='1' className='project-btn'>LEARN MORE</button>
@@ -66,10 +66,10 @@ const children = useMemo(() => {
           </div>
           </div>
           <div className='project'>
-            <img className='project-img' src='/projectImages/JSfoodTracker.png' alt='JavaScript Store' />
+            <img className='project-img' src='/projectImages/weatherApp.png' alt='React Weather App' />
           <div className='project-context'>
-            <h5>Food Tracker</h5>
-            <p>JavaScript / HTML / CSS</p>
+            <h5>Weather App</h5>
+            <p>ReactJS / CSS</p>
             <div className='project-btn-container'>
               <button onClick={handleOpenModal} project-id='2' className='project-btn'>LEARN MORE</button>
             </div>
@@ -79,17 +79,17 @@ const children = useMemo(() => {
             <img className='project-img' src='/projectImages/CRAonlineStore.png' alt='React Food Log' />
           <div className='project-context'>  
             <h5>Online Supermarket</h5>
-            <p>ReactJS / HTML / CSS</p>
+            <p>ReactJS / CSS</p>
             <div className='project-btn-container'>
               <button onClick={handleOpenModal} project-id='3' className='project-btn'>LEARN MORE</button>
             </div>
           </div>
           </div>
           <div className='project'>
-            <img className='project-img' src='/projectImages/weatherApp.png' alt='JavaScript To Do App' />
+            <img className='project-img' src='/projectImages/JSwebsite.png' alt='JavaScript Website' />
           <div className='project-context'>  
-            <h5>Weather App</h5>
-            <p>ReactJS / CSS</p>
+            <h5>Band Website</h5>
+            <p>JavaScript / HTML / CSS</p>
             <div className='project-btn-container'>
               <button onClick={handleOpenModal} project-id='4' className='project-btn'>LEARN MORE</button>
             </div>
