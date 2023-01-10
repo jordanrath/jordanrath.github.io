@@ -103,7 +103,7 @@ export const ModalData = [
                 id: 6,
                 name: 'To Do List',
                 internalName: 'todoList',
-                description: "To Do list build with JavaScript, HTML and CSS.  Add things to do and cross them out or remove them when you're done!",
+                description: "To Do list built with JavaScript, HTML and CSS.  Add things to do and cross them out or remove them when you're done!",
                 href: "https://jordanrath.github.io/todo-list/",
                 images: [                
                  {

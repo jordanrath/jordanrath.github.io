@@ -13,7 +13,7 @@ const About = () => {
   return (
     <div className='about about-div section' id='about'>
       <h3 data-aos="zoom-in-down">Hello, I'm Jordan Rath</h3>
-      <h3 data-aos="zoom-in-down">a developer</h3>
+      <h3 data-aos="zoom-in-down">a developer.</h3>
       <div className='about-context'>
         <div className='about-image-container' data-aos={aosImgEffect}>
           <ImageLoader 
