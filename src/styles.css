@@ -66,6 +66,7 @@ body {
 
 p {
   font-size: 1rem;
+  user-select: none;
 }
 
 h1,
@@ -79,10 +80,12 @@ h5 {
   font-weight: 400;
   line-height: 1.3;
   letter-spacing: var(--letterSpacing);
+  user-select: none;
 }
 
 h1 {
   font-size: 3.052rem;
+  user-select: none;
 }
 
 small,
@@ -97,6 +100,7 @@ ul {
 
 a {
   text-decoration: none;
+  user-select: none;
 }
 
 .loading {
@@ -656,6 +660,11 @@ input:checked + .background-slider:before {
   color: whitesmoke;
 }
 
+.project-btn:active {
+  box-shadow: inset 0px 0px 7px #030303;
+  outline: none;
+}
+
 .project:hover .project-context {
   opacity: 1;
 }
@@ -804,6 +813,11 @@ input:checked + .background-slider:before {
   padding-left: 30px;
 }
 
+.view-project:active {
+  box-shadow: inset 0px 0px 7px #030303;
+  outline: none;
+}
+
 .close-modal-btn {
   display: flex;
   justify-content: flex-end;
@@ -940,6 +954,14 @@ textarea[id=message] {
   border: 0;
   background-color: #1D6ACF;
   color: whitesmoke;
+}
+
+.btn:active {
+  box-shadow: inset 0px 0px 7px #030303;
+  outline: none;
+  border: 1px solid rgb(0, 0, 0, 0.7);
+  color: rgb(245, 245, 245, 0.9);
+  text-shadow: #000000 1px 1px;
 }
 
 /* ------------------------- Footer ------------------------- */
@@ -1226,6 +1248,15 @@ body {
 
   .modal-img {
     min-width: 430px;
+  }
+
+  .footer-div {
+    height: auto;
+  }
+
+  .contact-info-div {
+    flex-direction: row;
+    gap: 20px;
   }
 }
 
