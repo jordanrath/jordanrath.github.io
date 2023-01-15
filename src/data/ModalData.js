@@ -6,7 +6,7 @@ export const ModalData = [
                 id: 1,
                 name: 'Food Tracker',
                 internalName: 'foodLog',
-                description: 'Food Tracker is built with JavaScript, HTML and CSS.  With Food Tracker you can select from a number of foods and customize the macro nutrients that food has.  Once a food has been added Food Tracker will calculate the total calories and add the results to a graph that stores data of all foods that have been added.',
+                description: 'Food Tracker is built with JavaScript, HTML, CSS and is bundled with Parcel.  With Food Tracker you can choose from a number of foods and customize the macro nutrients the selected food has.  Once a food has been added, Food Tracker will calculate the total calories and add the results to a graph that stores the data of all foods that have been added.  You can also remove any food you choose after it has been added.',
                 href: "https://jordanrath.github.io/nutrition-tracker/",
                 images: [ 
                  {
@@ -28,7 +28,7 @@ export const ModalData = [
                 id: 2,
                 name: 'Weather App',
                 internalName: 'weatherApp',
-                description: 'Weather App is built with React and CSS, it features backend hookups to provide geolocation updated by zip code.',
+                description: 'Weather App is built with React and CSS, it features backend API calls to provide geolocation updated by zip code or city.  The app features reusable components and displays different backgrounds depending on the weather.',
                 href: "https://jordanrath.github.io/weather-app/",
                 images: [                
                  {
@@ -42,7 +42,7 @@ export const ModalData = [
                 id: 3,
                 name: 'Online Supermarket',
                 internalName: 'superMarket',
-                description: 'Supermarket is built with React and CSS.  Easily navigate through the store and add foods to your cart.  You can edit your cart when ready, you will be sent to checkout with Stripe integration.',
+                description: 'Supermarket is built with React and CSS.  Easily navigate through the store and add foods to your cart.  You can add or remove items in your cart and when you\'re ready, you will be sent to the checkout with Stripe integration.',
                 href: "https://jordanrath.github.io/supermarket/",
                 images: [                
                  {
