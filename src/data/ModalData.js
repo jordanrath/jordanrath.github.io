@@ -6,7 +6,7 @@ export const ModalData = [
                 id: 1,
                 name: 'Food Tracker',
                 internalName: 'foodLog',
-                description: 'Food Tracker is built with JavaScript, HTML, CSS and is bundled with Parcel.  With Food Tracker you can choose from a number of foods and customize the macro nutrients the selected food has.  Once a food has been added, Food Tracker will calculate the total calories and add the results to a graph that stores the data of all foods that have been added.  You can also remove any food you choose after it has been added.',
+                description: 'Food Tracker is built with JavaScript, HTML, CSS and is bundled with Parcel.  With Food Tracker you can choose from a number of foods and customize their macro-nutrient profile.  Once a food has been added, Food Tracker will calculate the total calories and add the results to a graph that stores the collective data.  You can also remove any food you choose after it has been added.',
                 href: "https://jordanrath.github.io/nutrition-tracker/",
                 images: [ 
                  {
@@ -28,7 +28,7 @@ export const ModalData = [
                 id: 2,
                 name: 'Weather App',
                 internalName: 'weatherApp',
-                description: 'Weather App is built with React and CSS, it features backend API calls to provide geolocation updated by zip code or city.  The app features reusable components and displays different backgrounds depending on the weather.',
+                description: 'Weather App is built with React and CSS.  It features backend API calls to provide geolocation updated by zip code or city.  The app features reusable components and displays different backgrounds depending on the weather.',
                 href: "https://jordanrath.github.io/weather-app/",
                 images: [                
                  {
@@ -42,7 +42,7 @@ export const ModalData = [
                 id: 3,
                 name: 'Online Supermarket',
                 internalName: 'superMarket',
-                description: 'Supermarket is built with React and CSS.  Easily navigate through the store and add foods to your cart.  You can add or remove items in your cart and when you\'re ready, you will be sent to the checkout with Stripe integration.',
+                description: 'Supermarket is built with React and CSS.  Easily navigate through the store and add or remove items to and from your cart.  When you\'re ready, you will be sent to checkout with Stripe integration.',
                 href: "https://jordanrath.github.io/supermarket/",
                 images: [                
                  {
@@ -68,7 +68,7 @@ export const ModalData = [
                 id: 4,
                 name: 'Band Website',
                 internalName: 'bandWebsite',
-                description: 'The Band Website is built with JavaScript, HTML and CSS.  It features imbedded video, links to get tickets, social media and a shopping cart.',
+                description: 'The Band Website is built with JavaScript, HTML and CSS.  It features an imbedded video, links to buy tickets, social media and a functional shopping cart.',
                 href: "https://jordanrath.github.io/band-store-project/index.html",
                 images: [
                  {
@@ -90,7 +90,7 @@ export const ModalData = [
                 id: 5,
                 name: 'Pomodoro Clock',
                 internalName: 'pomodoroClock',
-                description: 'Pomodoro clock built with React and CSS.  Set a countdown clock and take a break once you hear the bell!',
+                description: 'Pomodoro Clock is built with React and CSS.  Set a countdown clock and take a break once you hear the bell!',
                 href: "https://jordanrath.github.io/clock-app/",
                 images: [                
                  {
@@ -103,7 +103,7 @@ export const ModalData = [
                 id: 6,
                 name: 'To Do List',
                 internalName: 'todoList',
-                description: "To Do list built with JavaScript, HTML and CSS.  Add things to do and cross them out or remove them when you're done!",
+                description: "To Do List is built with JavaScript, HTML and CSS.  Add tasks to do, cross them out and remove them when you're done!",
                 href: "https://jordanrath.github.io/todo-list/",
                 images: [                
                  {
