@@ -9,7 +9,7 @@ const About = () => {
   const alt = 'My dog Cooper and I';
   const imgClassName = 'about-image' ;
   const aosImgEffect = "zoom-in-down" ;
-//
+
   return (
     <div className='about about-div section' id='about'>
       <h3 data-aos="zoom-in-down">Hello, I'm Jordan.</h3>
