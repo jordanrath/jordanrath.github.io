@@ -12,7 +12,7 @@ const Footer = () => {
       </div>
       <div className='footer-bottom'>
         <div className='author-div' data-aos="fade-down-left">
-          <p>@2022 Jordan Rath</p>
+          <p>@2023 Jordan Rath</p>
         </div>
         <div className='clock-div' data-aos="fade-down-right">
           <p><Clock /></p>
