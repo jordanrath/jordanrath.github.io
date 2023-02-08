@@ -1,7 +1,6 @@
 export const ModalData = [
             //created an ONION or JSON data blob or Nested inline objects of key value pairs. 'project name' is the a 
             //layer which contains other key value pairs. 
-            //
 
             {
                 id: 1,
