@@ -45,8 +45,6 @@ html {
 }
 
 body {
-  /* background: var(--backgroundColor); */
-  /* background-image: linear-gradient(to bottom right, #121212, #202020, #494949);  */
   color: var(--textColor);
   font-family: var(--bodyFont);
   font-weight: 400;
