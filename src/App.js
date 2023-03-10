@@ -42,21 +42,23 @@ const App = () => {
     <main id='home'>
       <Navbar {...refProps}/>
       <BackgroundSelector />
-      <section className='about' id='about' ref={aboutRef}>
-        <About />
-      </section>
-      <section className='education' id='education' ref={imagesRef}>
-        <Education />
-      </section> 
-      <section className='projects' id='projects' ref={projectsRef}>
-        <Projects />
-      </section>
-      <section className='contact' id='contact' ref={contactRef}>
-        <Contact />
-      </section>
+      <div className="sections">
+        <section className='about' id='about' ref={aboutRef}>
+          <About />
+        </section>
+        <section className='education' id='education' ref={imagesRef}>
+          <Education />
+        </section> 
+        <section className='projects' id='projects' ref={projectsRef}>
+          <Projects />
+        </section>
+        <section className='contact' id='contact' ref={contactRef}>
+          <Contact />
+        </section>
+      </div>    
       <section className='footer'>
         <Footer />
-      </section>     
+      </section> 
     </main>
    )
 }

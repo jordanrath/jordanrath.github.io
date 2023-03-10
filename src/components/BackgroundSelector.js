@@ -20,4 +20,4 @@ const BackgroundSelector = () => {
   )
 }
 
-export default BackgroundSelector
+export default BackgroundSelector;

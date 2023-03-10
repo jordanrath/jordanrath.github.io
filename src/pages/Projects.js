@@ -1,5 +1,6 @@
 import React, { useCallback, useMemo, useState, useContext } from 'react';
 import Modal from '../components/Modal';
+import ProjectsCarousel from '../components/ProjectsCarousel';
 import { AppContext } from '../contexts/appData';
 
 const Projects = () => {
@@ -46,14 +47,22 @@ const Projects = () => {
 
 // create useMemo to prevent unneccesary redraws
 const children = useMemo(() => {
+
   return (
     <>
       {modalJSX}
-      <div>
-        <h1 data-aos="zoom-in-down">PROJECTS</h1>
-        <div className='project-header-bar header-bar' data-aos="zoom-in-down"></div>
+      <div className="project-header__container">
+        <div className='project-title__container'>
+          <div className="project-title-bar__container">
+            <h1 data-aos="zoom-in-down">Projects</h1>
+            <div className='project-header-bar header-bar' data-aos="zoom-in-down"></div>
+          </div>
+          <p>Check out a few of the projects I've built.</p>
+        </div>
+        <img className='project__svg' src='/svg/projects-icon.png' alt="Projects Computer" />
       </div>
-      <div className='projects-div-frame' >
+      <div className='project-header-bar header-bar' data-aos="zoom-in-down"></div>
+      {/* <div className='projects-div-frame' >
         <div className='projects-div' data-aos="zoom-in-down">
           <div className='project'>
             <img className='project-img' src='/projectImages/JSfoodTracker.png' alt='JavaScript Store' />
@@ -114,6 +123,27 @@ const children = useMemo(() => {
               <button onClick={handleOpenModal} project-id='6' className='project-btn'>LEARN MORE</button>
             </div>
           </div>
+          </div>
+        </div>  
+      </div> */}
+      <div className='carousel'>
+        <div className="carousel-project">
+          <div className="carousel-project__image">
+            <ProjectsCarousel />
+          </div>
+          <div className="carousel-project__info">
+            <div className="carousel-project__container">
+              <h2 className='carousel-project__subtitle'> 
+                Example Subtitle
+              </h2>
+              <h1 className='carousel-project__title'>
+                Example Title
+              </h1>
+              <p className='carousel-project__description'>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus repellendus fugit recusandae cupiditate architecto! Autem sapiente incidunt quasi qui reiciendis? Consequatur expedita asperiores facilis totam maiores harum quasi fugiat in.
+              </p>
+              <a href='#' className='carousel-project__btn'>Button</a>
+            </div>
           </div>
         </div>
       </div>

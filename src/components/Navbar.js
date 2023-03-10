@@ -1,5 +1,6 @@
 import { React, useCallback } from 'react'
 import { links } from '../data/appLinks'
+import Menu from './Menu'
 import NavbarLink from './NavbarLink'
 
 const Navbar = (props) => {
@@ -40,6 +41,7 @@ const Navbar = (props) => {
     <nav className='navbar sticky'>
       <div data-aos="fade-down" className='navTitle'>
         <div>
+          {/* <Menu showMenu={true}/> */}
           {linkJsx}
         </div>
       </div>
