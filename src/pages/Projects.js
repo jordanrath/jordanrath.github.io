@@ -1,6 +1,6 @@
 import React, { useCallback, useMemo, useState, useContext } from 'react';
+import Carousel from '../components/Carousel';
 import Modal from '../components/Modal';
-import ProjectsCarousel from '../components/ProjectsCarousel';
 import { AppContext } from '../contexts/appData';
 
 const Projects = () => {
@@ -13,7 +13,7 @@ const Projects = () => {
   const [openedProjectID, setOpenedProjectID] = useState(null);
 
   //destructuring a new const of 'modalData' from the result of the useContext() hook
-  const { modalData } = useContext(AppContext);
+  const { modalData, projectData } = useContext(AppContext);
 
     const handleOpenModal = useCallback((event) => {
       event.preventDefault();
@@ -62,7 +62,28 @@ const children = useMemo(() => {
         <img className='project__svg' src='/svg/projects-icon.png' alt="Projects Computer" />
       </div>
       <div className='project-header-bar header-bar' data-aos="zoom-in-down"></div>
-      {/* <div className='projects-div-frame' >
+      
+      
+      <Carousel className='carousel' imgClassName='projects-image' btnClassName='button__center'  images={projectData} iconLeft="fa-solid fa-arrow-left" iconRight="fa-solid fa-arrow-right" aosEffect="flip-down"/>
+      
+      
+    </>
+  );
+}, [projectData, modalJSX]);
+  
+  return (
+    <div className='projects-section section' id='projects'>
+      {children}
+    </div>
+   ) 
+}
+
+export default Projects
+
+
+
+
+     {/* <div className='projects-div-frame' >
         <div className='projects-div' data-aos="zoom-in-down">
           <div className='project'>
             <img className='project-img' src='/projectImages/JSfoodTracker.png' alt='JavaScript Store' />
@@ -126,36 +147,3 @@ const children = useMemo(() => {
           </div>
         </div>  
       </div> */}
-      <div className='carousel'>
-        <div className="carousel-project">
-          <div className="carousel-project__image">
-            <ProjectsCarousel />
-          </div>
-          <div className="carousel-project__info">
-            <div className="carousel-project__container">
-              <h2 className='carousel-project__subtitle'> 
-                Example Subtitle
-              </h2>
-              <h1 className='carousel-project__title'>
-                Example Title
-              </h1>
-              <p className='carousel-project__description'>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus repellendus fugit recusandae cupiditate architecto! Autem sapiente incidunt quasi qui reiciendis? Consequatur expedita asperiores facilis totam maiores harum quasi fugiat in.
-              </p>
-              <a href='#' className='carousel-project__btn'>Button</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </>
-  );
-}, [handleOpenModal, modalJSX]);
-  
-  return (
-    <div className='projects-section section' id='projects'>
-      {children}
-    </div>
-   ) 
-}
-
-export default Projects

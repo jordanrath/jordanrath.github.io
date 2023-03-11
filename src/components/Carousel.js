@@ -29,33 +29,42 @@ const Carousel = ({images, className: classNameProp, imgClassName, iconLeft, ico
 const memoizedMap = useMemo(() => {
     return (
         <div className={className} data-aos={aosEffect} data-aos-duration={aosDuration}>
-            {images.map(({ image, alt, placeholderImage }, index) => {
-                return (
-                    <div
-                        className={index === current ? 'slide active' : 'slide'}
-                        key={index}
-                        >
-                        {index === current && (
-                        <ImageLoader 
-                            src={image} 
-                            placeholderImage={placeholderImage} 
-                            alt={alt} 
-                            imgClassName={imgClassName} 
-                        />)}   
-                        <div className='carousel-circles-div'>
+            <div className="carousel__nav">
+                            {images.length > 1 ? <FontAwesomeIcon className={leftBtnClass} icon={iconLeft} onClickCapture={prevImage}/> : null}
+                            <div className='btn-bar'></div>
+                            {images.length > 1 ? <FontAwesomeIcon className={rightBtnClass} icon={iconRight} onClickCapture={nextImage}/> : null}
                         </div>
-                    </div>         
+            {images.map(({ image, alt, placeholderImage, subtitle, title, description }, index) => {
+                return (  
+                    <> 
+                        {index === current && (
+                        <div className='carousel-project' key={index}>
+                            <div key={index} className={index === current ? `carousel-project__image slide active ${index}` : 'slide'} data-aos="fade-left" data-aos-easing="ease-in">
+                                <ImageLoader 
+                                    src={image} 
+                                    placeholderImage={placeholderImage} 
+                                    alt={alt} 
+                                    imgClassName={imgClassName} 
+                                /> 
+                            </div>
+                            <div className="carousel-project__container">
+                              <h2 className='carousel-project__subtitle'> 
+                                {subtitle}
+                              </h2>
+                              <h1 className='carousel-project__title' data-aos="fade-down" data-aos-easing="ease-in">
+                                {title}
+                              </h1>
+                              <p className='carousel-project__description' data-aos="fade-down" data-aos-easing="ease-in">
+                                {description}
+                              </p>
+                              <a href='/' className='carousel-project__btn'>Button</a>
+                            </div>
+                        </div>)}
+                    </>    
                 )
             })}
-            {/* write as const and insert that way */}
-            {/* check if how many images are in the carousel if there is more than 1 add an arrow */}
-                <div className="carousel__nav">
-                    {images.length > 1 ? <FontAwesomeIcon className={leftBtnClass} icon={iconLeft} onClickCapture={prevImage}/> : null}
-                    {images.length > 1 ? <FontAwesomeIcon className={rightBtnClass} icon={iconRight} onClickCapture={nextImage}/> : null}
-                </div>
-            </div>
-      )
-    
+        </div>
+    )
 }, [images, current, className, nextImage, prevImage, imgClassName, iconLeft, iconRight, leftBtnClass, rightBtnClass, aosEffect, aosDuration]);
 
 if (!Array.isArray(images) || images.length <= 0) {
@@ -69,4 +78,5 @@ if (!Array.isArray(images) || images.length <= 0) {
     )
 };
 
-export default Carousel
+export default Carousel;
+

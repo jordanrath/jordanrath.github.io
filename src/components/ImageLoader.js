@@ -16,9 +16,9 @@ const ImageLoader = ({ placeholderImage, src, alt, imgClassName, aosImgEffect })
     return (
     <>
       <img
-      src={imgSrc}
-      alt={alt || ''}
-      className={`${imgClassName} ${customClass}`}
+        src={imgSrc}
+        alt={alt || ''}
+        className={`${imgClassName} ${customClass}`}
       />
     </>
   )
