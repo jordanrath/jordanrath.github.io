@@ -132,6 +132,11 @@ h1 {
   user-select: none;
 }
 
+h2 {
+  font-size: 38px;
+  color: var(--on-primary);
+}
+
 h3 {
   font-size: 38px;
 }
@@ -256,8 +261,8 @@ a {
   justify-content: flex-end;
   padding: 0;
   border-bottom: 2px solid var(--primary-variant);
-  padding-right: 30px;
-  padding-left: 30px;
+  /* padding-right: 30px;
+  padding-left: 30px; */
   z-index: 2000;
 }
 
@@ -323,9 +328,9 @@ a {
   font-size: 2rem;
 }
 
-.active {
+/* .active {
   animation: 1s ease-out 0s 1 slideInFromLeft;
-}
+} */
 
 .active:hover {
   opacity: 1;
@@ -773,7 +778,7 @@ input:checked + .background-slider:before {
   align-self: center;
   max-width: 900px;
   min-height: 550px;
-  /* overflow: hidden; */
+  overflow: hidden;
   /* SHOULD THIS BE MAX??? */
   position: relative;
 }
@@ -785,16 +790,11 @@ input:checked + .background-slider:before {
   height: 100%;
   align-items: center;
   justify-content: flex-end;
-  position: relative;
-  background-color: var(--background-secondary);
+  z-index: 0;
+  background-color: var(--background-secondary-dm);
   /* background-color: var(--background-lm); */
   position: absolute;
-}
-
-.carousel-project .active {
-  z-index: 1;
-  display: flex;
-  visibility: visible;
+  /* transition: 0.6s all linear; */
 }
 
 .carousel-project__container {
@@ -804,7 +804,13 @@ input:checked + .background-slider:before {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width: 40%;
+  order: 1;
 }
+
+/* .carousel-project__info {
+
+} */
 
 .carousel-project__image {
   width: 60%;
@@ -817,16 +823,41 @@ input:checked + .background-slider:before {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  /* transform: translateX(100%);
+  transition: 0.6s all ease-in-out; */
 }
+
+.active {
+  z-index: 1;
+  display: flex;
+  visibility: visible;
+}
+
+/* .active .carousel-project__subtitle,
+.active .carousel-project__description,
+.active .carousel-project__btn {
+  transform: translateY(0);
+  opacity: 1;
+  transition: 0.6s all ease-in-out;
+  visibility: visible;
+} */
+
+/* .active .carousel-project__image {
+  transition: 0.6s all ease-in-out;
+  transform: translateX(0);
+  } */
 
 .projects-image.loaded {
-  /* width: 90%;
-  height: 100%; */
   max-width: 540px;
   max-height: 550px;
+  /* transition: 0.6s all ease-in-out;
+  transform: translateX(0); */
 }
 
-.slider.projects__carousel {
+.projects__carousel {
   display: flex;
   justify-content: flex-end;
   align-self: flex-end;
@@ -839,8 +870,7 @@ input:checked + .background-slider:before {
   font-size: 18px;
   right: 0;
   z-index: 2;
-  /* background-color: #fff; */
-  background-color: var(--background-secondary);
+  background-color: var(--background-secondary-dm);
   bottom: 0;
 }
 
@@ -849,6 +879,7 @@ input:checked + .background-slider:before {
   padding: 11px 15px;
   position: relative;
   color: var(--on-primary);
+  border-right: 1px solid var(--background-secondary);
 }
 
 .carousel__nav .right-arrow {
@@ -856,6 +887,7 @@ input:checked + .background-slider:before {
   padding: 11px 15px;
   position: relative;
   color: var(--on-primary);
+  border-left: 1px solid var(--background-secondary);
 }
 
 /* .carousel__nav .right-arrow:nth-child(1)::after {
@@ -869,12 +901,12 @@ input:checked + .background-slider:before {
   margin-top: -7px;
 } */
 
-.slider {
+/* .slider {
   width: 100%;
   height: 100%;
-}
+} */
 
-.carousel-project__info {
+/* .carousel-project__info {
   height: 100%;
   display: flex;
   justify-content: center;
@@ -887,7 +919,7 @@ input:checked + .background-slider:before {
   margin: auto;
   padding: 0 40px;
   width: 40%;
-}
+} */
 
 .carousel-project__subtitle {
   font-family: 'Open Sans', sans-serif;
@@ -918,8 +950,8 @@ input:checked + .background-slider:before {
 }
 
 .carousel-project__description {
-  /* transform: translateY(25%); */
-  /* opacity: 0;
+  /* transform: translateY(25%);
+  opacity: 0;
   visibility: hidden;
   transition: 0.6s all ease-in-out; */
   margin-top: 35px;
@@ -1757,11 +1789,11 @@ body {
     left: 90%;
   }
 
-  .slider {
+  /* .slider {
     display: flex;
     align-items: center;
     justify-content: center;
-  }
+  } */
 
   .contact-info-div {
     display: flex;
@@ -1932,10 +1964,10 @@ body {
     padding-bottom: 0px;
   }
 
-  .slider {
+  /* .slider {
     width: 95%;
     min-height: unset;
-  }
+  } */
 
   .left-arrow.center-btn {
     top: 65%;

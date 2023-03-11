@@ -54,7 +54,7 @@ const children = useMemo(() => {
       <div className="project-header__container">
         <div className='project-title__container'>
           <div className="project-title-bar__container">
-            <h1 data-aos="zoom-in-down">Projects</h1>
+            <h2 data-aos="zoom-in-down">Projects</h2>
             <div className='project-header-bar header-bar' data-aos="zoom-in-down"></div>
           </div>
           <p>Check out a few of the projects I've built.</p>
@@ -62,11 +62,18 @@ const children = useMemo(() => {
         <img className='project__svg' src='/svg/projects-icon.png' alt="Projects Computer" />
       </div>
       <div className='project-header-bar header-bar' data-aos="zoom-in-down"></div>
-      
-      
-      <Carousel className='carousel' imgClassName='projects-image' btnClassName='button__center'  images={projectData} iconLeft="fa-solid fa-arrow-left" iconRight="fa-solid fa-arrow-right" aosEffect="flip-down"/>
-      
-      
+      <Carousel 
+        className='carousel' 
+        imgClassName='projects-image' 
+        btnClassName='button__center'  
+        images={projectData} 
+        iconLeft="fa-solid fa-arrow-left" 
+        iconRight="fa-solid fa-arrow-right" 
+        aosEffect="zoom-in-up"
+        aosImgEffect="fade-left"
+        aosDuration="500"
+        aosEasing="ease-in-sine"
+      />
     </>
   );
 }, [projectData, modalJSX]);
@@ -79,7 +86,6 @@ const children = useMemo(() => {
 }
 
 export default Projects
-
 
 
 
