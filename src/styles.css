@@ -781,6 +781,8 @@ input:checked + .background-slider:before {
   overflow: hidden;
   /* SHOULD THIS BE MAX??? */
   position: relative;
+  box-shadow: inset 0 0 0 1px rgba(150, 135, 138, 0.2), 0 1px 3px rgba(150, 151, 144, 0.1), 0 2px 46px 2px rgba(76, 126, 190, 0.2);
+  transition: all 0.8s;
 }
 
 .carousel-project {
@@ -963,14 +965,16 @@ input:checked + .background-slider:before {
 }
 
 .carousel-project__btn {
-  width: 35%;
+  width: 45%;
+  background-color: var(--background-secondary-dm);
+  border: none;
+  cursor: pointer;
   color: var(--on-primary);
   font-family: 'Open Sans', sans-serif;
   letter-spacing: 3px;
   font-size: 11px;
   text-transform: uppercase;
   margin: 0;
-  width: 35%;
   font-weight: 700;
   text-decoration: none;
   /* transform: translateY(25%);

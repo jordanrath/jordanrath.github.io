@@ -2,6 +2,7 @@ import React, { useCallback, useMemo, useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import classNames from 'classnames';
 import ImageLoader from './ImageLoader';
+import ModalButton from './ModalButton';
 
 //image supports on load and on error...  hook into in with callback() to set state in component to be 'loaded' 'loading' etc... spinner, color change, etc
 const Carousel = ({images, className: classNameProp, imgClassName, iconLeft, iconRight, btnClassName, aosEffect, aosImgEffect, aosDuration, aosEasing }) => {
@@ -85,7 +86,8 @@ const memoizedMap = useMemo(() => {
                                     <p className='carousel-project__description'>
                                       {description}
                                     </p>
-                                    <a href='/' className='carousel-project__btn'>Button</a>
+                                    {/* <a href='/' className='carousel-project__btn'>Button</a> */}
+                                    <ModalButton className='carousel-project__btn' />
                                 </div>
                             </div>
                         </div>)}

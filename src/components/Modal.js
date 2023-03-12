@@ -13,10 +13,10 @@ const Modal = ({ data, isOpen: openModal, onRequestClose: handleCloseModal }) =>
                isOpen={openModal}
                contentLabel="Project Description Modal"
                onRequestClose={handleCloseModal}
-               className="modal"
+               className="carousel-project__btn"
                overlayClassName="overlay"
             >
-              <Carousel imgClassName='modal-img' images={images} className='modal-img-cnt' iconLeft="fa-solid fa-angle-left" iconRight="fa-solid fa-angle-right" aosEffect="zoom-in" aosImgEffect="flip-up" aosDuration="500" />
+              {/* <Carousel imgClassName='modal-img' images={images} className='modal-img-cnt' iconLeft="fa-solid fa-angle-left" iconRight="fa-solid fa-angle-right" aosEffect="zoom-in" aosImgEffect="flip-up" aosDuration="500" /> */}
               <div className='project-title'>
                 <h2>{name}</h2>
               </div>
