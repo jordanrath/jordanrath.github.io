@@ -9,6 +9,7 @@ export const ProjectData = [
         title: 'Food Tracker',
         description: 'Food Tracker is built with JavaScript, HTML, CSS and is bundled with Parcel.  With Food Tracker you can choose from a number of foods and customize their macro-nutrient profile.  Once a food has been added, Food Tracker will calculate the total calories and add the results to a graph that stores the collective data.  You can also remove any food you choose after it has been added.',
         href: "https://jordanrath.github.io/nutrition-tracker/",
+        github:"https://github.com/jordanrath/nutrition-tracker",
         images: [ 
          {
              image: '/modalImages/foodlogFrontPage.png',
@@ -33,6 +34,7 @@ export const ProjectData = [
         subtitle: 'React - CSS',
         title: 'Weather App',
         description: 'Weather App is built with React and CSS.  It features backend API calls to provide geolocation updated by zip code or city.  The app features reusable components and displays different backgrounds depending on the weather.',
+        github:"https://github.com/jordanrath/weather-app",
         images: [                
             {
                 image: '/modalImages/weatherApp.png',
@@ -49,6 +51,7 @@ export const ProjectData = [
         subtitle: 'React - CSS - Stripe',
         title: 'SuperM',
         description: 'Supermarket is built with React and CSS.  Easily navigate through the store and add or remove items to and from your cart.  When you\'re ready, you will be sent to checkout with Stripe integration.',
+        github:"https://github.com/jordanrath/supermarket",
         images: [                
             {
                 image: '/modalImages/superMFrontPage.png',
@@ -77,6 +80,7 @@ export const ProjectData = [
         subtitle: 'JavaScript - HTML - CSS',
         title: 'Band Website',
         description: 'The Band Website is built with JavaScript, HTML and CSS.  It features an imbedded video, links to buy tickets, social media and a functional shopping cart.',
+        github:"https://github.com/jordanrath/band-store-project",
         images: [
             {
                 image: '/modalImages/bandFrontPage.png',
@@ -101,6 +105,7 @@ export const ProjectData = [
         subtitle: 'React - CSS - Firebase',
         title: 'The Chatroom',
         description: 'The Chatroom is build with React and CSS with connection to Firebase Cloud Firestore database.  The Chatroom uses firebase to handle user authentication and user management.  Switch between light and dark mode as you chat with other users and explore the menu.',
+        github:"https://github.com/jordanrath/messaging-app",
         images: [
             {
                 image: '/modalImages/bandFrontPage.png',

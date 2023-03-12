@@ -19,7 +19,18 @@ const Education = () => {
               <div className='education__bar'></div>
               <p>Here are the certifications I have earned over the last few years, I am always looking for new ways to learn and grow as a developer.</p> 
           </div>
-          <Carousel className='image-section' imgClassName='cert-img' btnClassName='center-btn'  data={educationData} iconLeft="fa-solid fa-angle-left" iconRight="fa-solid fa-angle-right" aosEffect="flip-down" />
+          <Carousel 
+            className='carousel' 
+            imgClassName='projects-image' 
+            btnClassName='button__center'  
+            data={educationData} 
+            iconLeft="fa-solid fa-arrow-left" 
+            iconRight="fa-solid fa-arrow-right" 
+            aosEffect="zoom-in-up"
+            aosImgEffect="fade-left"
+            aosDuration="500"
+            aosEasing="ease-in-sine"
+          />
         </div> 
         <div className='education__technologies'>
           <div className="education__svg-container">
@@ -31,7 +42,6 @@ const Education = () => {
                   <h2>Languages and Frameworks</h2>
                   <span>.</span>
                 </div>
-                {/* <div className='education__bar'></div> */}
               </div>      
             <div className='education__languages' data-aos="zoom-in-down">
               <ul className='education__languages-top'>

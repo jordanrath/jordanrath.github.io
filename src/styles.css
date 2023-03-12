@@ -27,6 +27,7 @@ html {
   --background-scroll-lm: #777777;
   --on-primary: #FFFFFF;
   --on-secondary: #000000;
+  --on-primary-modal: #7e7e7e;
   --on-error: #FFFFFF;
   --error-dm: #CF6679;
   --error-lm: #B00020;
@@ -154,22 +155,22 @@ a {
   text-decoration: none;
   user-select: none;
 }
-
+/* 
 .cert-img .loading {
   filter: blur(10px);
   clip-path: inset(0);
   width: 100%;
   height: 350px;
   border-radius: 6px;
-}
-
+} */
+/* 
 .cert-img .loaded {
   filter: blur(0px);
   transition: filter 0.5s linear;
   width: 100%;
   height: auto;
   max-height: 350px;
-}
+} */
 
 
 /* ------------------------- Loader ------------------------- */
@@ -440,6 +441,9 @@ input:checked + .background-slider:before {
   min-width: 350px;
   border-radius: 6px;
   animation: right-to-left 1s ease-in-out forwards;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .about-image img {
@@ -563,7 +567,8 @@ input:checked + .background-slider:before {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-direction: row;
+  flex-direction: column;
+  gap: 75px;
   width: 100%;
   color: var(--on-primary);
   text-shadow: .5px .5px 2px var(--on-secondary);
@@ -575,11 +580,39 @@ input:checked + .background-slider:before {
   justify-content: flex-start;
   align-items: flex-start;
   gap: 30px;
-  max-width: 50%;
+  max-width: 70%;
 }
 
 .education__title-certs p {
   margin: 0;
+}
+
+.education__certs .carousel {
+  width: 100%;
+  height: 100%;
+  max-width: 850px;
+  min-height: 350px;
+}
+
+.education__certs .carousel-project__description {
+  margin-bottom: 5px;
+}
+
+.education__certs .carousel-project__btn {
+  visibility: hidden;
+}
+
+.education__certs .carousel-project__subtitle {
+  color: var(--on-primary-modal);
+}
+
+.education__certs .carousel-project__title {
+  font-size: 25px;
+  color: var(--on-primary);
+}
+
+.education__certs .carousel-project__description {
+  color: var(--on-primary-modal);
 }
 
 .education__skills {
@@ -703,7 +736,6 @@ input:checked + .background-slider:before {
   overflow: hidden;
   position: relative;
   box-shadow: inset 0 0 0 1px rgba(150, 135, 138, 0.2), 0 1px 3px rgba(150, 151, 144, 0.1), 0 2px 46px 2px rgba(76, 126, 190, 0.2);
-  transition: all 0.8s;
 }
 
 .carousel-project {
@@ -1096,19 +1128,6 @@ input:checked + .background-slider:before {
     bottom: 0;
 }
 
-.modal {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  z-index: 5200;
-  filter: unset;
-  position: absolute;
-  width: 800px;
-  background-color: var(--background-secondary);
-  border-radius: 2px;
-  user-select: none;
-}
-
 .modal-img__container {
   display: flex;
 }
@@ -1123,22 +1142,6 @@ input:checked + .background-slider:before {
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
   border-bottom: 2px solid var(--primary);
-}
-
-.modal__title {
-  display: flex;
-  justify-content: left;
-  align-self: start;
-  width: 50%;
-  border-bottom: 1px solid var(--background);
-}
-
-.modal h2 {
-  margin: 0;
-  display: flex;
-  font-size: 3rem;
-  color: var(--on-primary); 
-  padding-left: 30px;
 }
 
 .modal p {
@@ -1158,17 +1161,88 @@ input:checked + .background-slider:before {
   font-size: 16px;
 }
 
-.modal-btn__container {
+/* ------------------------- Modal Overlay ------------------------- */
+.modal {
   display: flex;
+  align-items: center;
+  flex-direction: column;
+  z-index: 5200;
+  filter: unset;
+  position: absolute;
+  width: 800px;
+  background-color: var(--background-secondary);
+  border-radius: 2px;
+  user-select: none;
+}
+
+.ReactModal__Overlay .carousel {
+  width: 100%;
+  height: 100%;
+}
+
+.ReactModal__Overlay .carousel-project {
+  display: flex;
+  flex-direction: column;
+}
+
+.ReactModal__Overlay .carousel-project__image {
+  width: 100%;
+}
+
+.ReactModal__Overlay .modal__content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.ReactModal__Overlay .modal__title {
+  display: flex;
+  flex-direction: column;
+  padding: 0 15px;
+}
+
+.ReactModal__Overlay .modal__title h1 {
+  color: var(--on-primary);
+}
+
+.ReactModal__Overlay .modal__title h2 {
+  width: 50%;
+  color: var(--background-scroll-lm);
+  font-size: 25px;
+  border-top: 1px solid var(--primary);
+}
+
+.ReactModal__Overlay .modal-btn__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
   padding-bottom: 30px;
 }
 
-.modal-btn__navigate-container {
+.modal-btn__navigate-container a {
   display: flex;
-  justify-content: flex-start;
-  width: 100%;
-  padding-left: 30px;
+  align-items: center;
+  flex-direction: column;
+  color: var(--on-primary);
+  padding: 0 0 0 15px;
+  gap: 10px;
+}
+
+.modal-btn__github-container a {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: var(--on-primary);
+  gap: 10px;
+}
+
+.modal-btn__close-container {
+  display: flex;
+  flex-direction: column; 
+  padding: 0 15px 0 0; 
 }
 
 .modal-btn__navigate:active {
@@ -1176,55 +1250,41 @@ input:checked + .background-slider:before {
   outline: none;
 }
 
-.modal-btn__close-container {
-  display: flex;
-  justify-content: flex-end;
-  width: 100%;
-  padding-right: 30px;
-}
-
 .modal-btn__navigate {
   display: flex;
   justify-content: center;
   margin: 0;
-  background-color: var(--grey-dark);
+  background-color: var(--background-secondary);
   color: var(--on-primary);
-  font-weight: bold;
-  border: 2px solid var(--primary);
+  border: 1px solid var(--primary);
   border-radius: 2px;
   height: fit-content;
   max-width: 150px;
   min-width: 100px;
   padding: 10px 15px;
-  border-radius: 6px;
   float: right;
   cursor: pointer;
   transition: all 0.5s;
 }
 
 .modal-btn__navigate:hover {
-  border: 2px solid var(--secondary);
-  background-color: var(--secondary);
+  border: 1px dotted var(--secondary);
+  color: var(--secondary);
 }
 
 .modal-btn__close {
-display: flex;
-justify-content: flex-end;
-align-items: flex-end;
-padding-right: 20px;
-padding-left: 10px;
-padding-bottom: 20px;
-border: none;
-font-size: 30px;
-cursor: pointer;
-color: var(--background-scroll-lm);
-background-color: var(--background-secondary);
-transition: all 0.5s;
-}
-
-.modal-btn__close:hover {
-  color: var(--red);
-}
+  border: none;
+  font-size: 30px;
+  cursor: pointer;
+  color: var(--background-scroll-lm);
+  background-color: var(--background-secondary);
+  transition: all 0.5s;
+  }
+  
+  .modal-btn__close:hover {
+    color: var(--red);
+  }
+  
 
 /* ------------------------- Contact ------------------------- */
 .contact-section {
@@ -1473,7 +1533,7 @@ body {
 }
 
 /* ------------------------- Media Queries ------------------------- */
-@media only screen and (max-width: 2400px) {
+/* @media only screen and (max-width: 2400px) {
   .projects-div {
     flex-basis: 60%;
   }
@@ -1653,9 +1713,7 @@ body {
   }
 
   .cert-img {
-    max-width: 100%;
-    /* height: auto; */
-    
+    max-width: 100%;  
   }
 
   .left-arrow.center-btn {
@@ -1666,11 +1724,6 @@ body {
     left: 90%;
   }
 
-  /* .slider {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  } */
 
   .contact-info-div {
     display: flex;
@@ -1841,12 +1894,7 @@ body {
     padding-bottom: 0px;
   }
 
-  /* .slider {
-    width: 95%;
-    min-height: unset;
-  } */
-
-  .left-arrow.center-btn {
+   .left-arrow.center-btn {
     top: 65%;
     right: 82%;
     font-size: 4rem;
@@ -2162,7 +2210,7 @@ body {
       padding-bottom: 20px;
     }
   }
-}
+} */
 
 
 

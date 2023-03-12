@@ -3,9 +3,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import classNames from 'classnames';
 import ImageLoader from './ImageLoader';
 import ModalButton from './ModalButton';
+import Modal from './Modal';
 
 //image supports on load and on error...  hook into in with callback() to set state in component to be 'loaded' 'loading' etc... spinner, color change, etc
-const Carousel = ({data, isOpen, className: classNameProp, imgClassName, iconLeft, iconRight, btnClassName, aosEffect, aosImgEffect, aosDuration, aosEasing }) => {
+const Carousel = ({data, isOpen, className: classNameProp, imgClassName, iconLeft, iconRight, btnClassName, handleCloseModal, href, aosEffect, aosImgEffect, aosDuration, aosEasing }) => {
     const [current, setCurrent] = useState(0);
     const length = data.length;
     const className = classNames([classNameProp]);
@@ -30,22 +31,30 @@ const memoizedMap = useMemo(() => {
     return (
         <div className={className} > 
             <div className="carousel__nav">
-                            {length > 1 ? <FontAwesomeIcon 
-                                                    className={leftBtnClass} 
-                                                    icon={iconLeft} 
-                                                    onClickCapture={prevImage}
-                                                 /> 
-                                                : 
-                                                    null}
-                            <div className='btn-bar'></div>
-                            {length > 1 ? <FontAwesomeIcon  
-                                                    className={rightBtnClass} 
-                                                    icon={iconRight} 
-                                                    onClickCapture={nextImage}
-                                                 /> 
-                                                : 
-                                                    null}
-                        </div>
+                {
+                    length > 1 
+                    ? 
+                        <FontAwesomeIcon 
+                            className={leftBtnClass} 
+                            icon={iconLeft} 
+                            onClickCapture={prevImage}
+                        /> 
+                    : 
+                        null
+                }
+                <div className='btn-bar'></div>
+                {
+                    length > 1 
+                    ? 
+                        <FontAwesomeIcon  
+                            className={rightBtnClass} 
+                            icon={iconRight} 
+                            onClickCapture={nextImage}
+                        /> 
+                    : 
+                        null
+                }
+            </div>
             {data.map(({ 
                 imageShown, 
                 image, 
@@ -58,9 +67,9 @@ const memoizedMap = useMemo(() => {
             }, index) => {
                 return (  
                     <> 
-                        {index === current && (
+                        {index === current && !isOpen && (
                         <div 
-                            className={index === current ? `carousel-project active ${id}` : 'carousel-project'} 
+                            className={index === current ? 'carousel-project active' : 'carousel-project'} 
                             key={index}
                         >
                             <div 
@@ -71,21 +80,12 @@ const memoizedMap = useMemo(() => {
                                 data-aos-easing={aosEasing}
                             >
                                 {
-                                !isOpen 
-                                    ?
-                                <ImageLoader 
-                                    src={imageShown} 
-                                    placeholderImage={placeholderImage} 
-                                    alt={alt} 
-                                    imgClassName={imgClassName}
-                                />
-                                    :
-                                <ImageLoader 
-                                    src={image} 
-                                    placeholderImage={placeholderImage} 
-                                    alt={alt} 
-                                    imgClassName={imgClassName}
-                                />
+                                    <ImageLoader 
+                                        src={imageShown} 
+                                        placeholderImage={placeholderImage} 
+                                        alt={alt} 
+                                        imgClassName={imgClassName}
+                                    />
                                 } 
                             </div>
                             <div className="carousel-project__container">
@@ -111,6 +111,30 @@ const memoizedMap = useMemo(() => {
                                 </div>
                             </div>
                         </div>)}
+
+                        {index === current && isOpen && (
+                        <div 
+                            className={index === current ? 'carousel-project active' : 'carousel-project'} 
+                            key={index}
+                        >
+                            <div 
+                                key={index} 
+                                className='carousel-project__image'
+                                data-aos={aosImgEffect}
+                                data-aos-duration={aosDuration}
+                                data-aos-easing={aosEasing}
+                            >
+                                {
+                                    <ImageLoader 
+                                        src={image} 
+                                        placeholderImage={placeholderImage} 
+                                        alt={alt} 
+                                        imgClassName={imgClassName}
+                                    />
+                                } 
+                            </div>
+                                <Modal />
+                        </div>)}
                     </>    
                 )
             })}
@@ -131,3 +155,23 @@ if (!Array.isArray(data) || data.length <= 0) {
 
 export default Carousel;
 
+
+// <div className='modal__title'>
+// <h2>{subtitle}</h2>
+// <h1>{title}</h1>
+// </div>
+// <div className='modal__description'>
+// <p>
+//   {description}
+// </p>
+// </div>
+// <div className='modal-btn__container'>
+// <div className='modal-btn__navigate-container'>
+//   <a href={href} target="_blank" rel="noreferrer">
+//     <button  className='modal-btn__navigate'>VIEW PROJECT</button>
+//   </a>
+// </div>
+// <div className='modal-btn__close-container'>
+//   <button onClick={handleCloseModal} className='modal-btn__close'>X</button>
+// </div>
+// </div> 
