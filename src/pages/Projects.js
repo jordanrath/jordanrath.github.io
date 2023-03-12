@@ -5,6 +5,7 @@ import { AppContext } from '../contexts/appData';
 
 const Projects = () => {
   const { projectData } = useContext(AppContext);
+  
 // create useMemo to prevent unneccesary redraws
 const children = useMemo(() => {
 

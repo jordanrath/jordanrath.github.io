@@ -39,14 +39,11 @@ const ModalButton = (props) => {
   
         //data equals the project clicked if that project has an id  then modalData otherwise null
         const data = (modalData && modalData.id ? modalData : null);
-        
+
         return (
           <Modal data={data} isOpen={openModal} onRequestClose={handleCloseModal} />
         )
       }, [projectData, openModal, handleCloseModal, openedProjectID]);
-
-
-
 
   return (
     <>

@@ -27,7 +27,6 @@ const Carousel = ({data, className: classNameProp, imgClassName, iconLeft, iconR
     }, [setCurrent, current, length]);
 
     // create memoized map for data
-    // data-aos={aosEffect} data-aos-duration={aosDuration}
 const memoizedMap = useMemo(() => {
     return (
         <div className={className} > 
