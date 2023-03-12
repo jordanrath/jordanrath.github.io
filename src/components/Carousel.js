@@ -5,9 +5,9 @@ import ImageLoader from './ImageLoader';
 import ModalButton from './ModalButton';
 
 //image supports on load and on error...  hook into in with callback() to set state in component to be 'loaded' 'loading' etc... spinner, color change, etc
-const Carousel = ({images, className: classNameProp, imgClassName, iconLeft, iconRight, btnClassName, aosEffect, aosImgEffect, aosDuration, aosEasing }) => {
+const Carousel = ({data, className: classNameProp, imgClassName, iconLeft, iconRight, btnClassName, aosEffect, aosImgEffect, aosDuration, aosEasing }) => {
     const [current, setCurrent] = useState(0);
-    const length = images.length;
+    const length = data.length;
     const className = classNames([classNameProp]);
     const leftBtnClass = classNames(['left-arrow', btnClassName]);
     const rightBtnClass = classNames(['right-arrow', btnClassName]);
@@ -26,13 +26,13 @@ const Carousel = ({images, className: classNameProp, imgClassName, iconLeft, ico
         setCurrent(current === 0 ? length - 1 : current - 1);
     }, [setCurrent, current, length]);
 
-    // create memoized map for images
+    // create memoized map for data
     // data-aos={aosEffect} data-aos-duration={aosDuration}
 const memoizedMap = useMemo(() => {
     return (
         <div className={className} > 
             <div className="carousel__nav">
-                            {images.length > 1 ? <FontAwesomeIcon 
+                            {length > 1 ? <FontAwesomeIcon 
                                                     className={leftBtnClass} 
                                                     icon={iconLeft} 
                                                     onClickCapture={prevImage}
@@ -40,7 +40,7 @@ const memoizedMap = useMemo(() => {
                                                 : 
                                                     null}
                             <div className='btn-bar'></div>
-                            {images.length > 1 ? <FontAwesomeIcon  
+                            {length > 1 ? <FontAwesomeIcon  
                                                     className={rightBtnClass} 
                                                     icon={iconRight} 
                                                     onClickCapture={nextImage}
@@ -48,7 +48,7 @@ const memoizedMap = useMemo(() => {
                                                 : 
                                                     null}
                         </div>
-            {images.map(({ image, alt, placeholderImage, subtitle, title, description, id }, index) => {
+            {data.map(({ imageShown, alt, placeholderImage, subtitle, title, description, id }, index) => {
                 return (  
                     <> 
                         {index === current && (
@@ -64,7 +64,7 @@ const memoizedMap = useMemo(() => {
                                 data-aos-easing={aosEasing}
                             >
                                 <ImageLoader 
-                                    src={image} 
+                                    src={imageShown} 
                                     placeholderImage={placeholderImage} 
                                     alt={alt} 
                                     imgClassName={imgClassName}
@@ -86,8 +86,7 @@ const memoizedMap = useMemo(() => {
                                     <p className='carousel-project__description'>
                                       {description}
                                     </p>
-                                    {/* <a href='/' className='carousel-project__btn'>Button</a> */}
-                                    <ModalButton className='carousel-project__btn' />
+                                    <ModalButton className='carousel-project__btn' id={id} />
                                 </div>
                             </div>
                         </div>)}
@@ -96,9 +95,9 @@ const memoizedMap = useMemo(() => {
             })}
         </div>
     )
-}, [images, current, className, nextImage, prevImage, imgClassName, iconLeft, iconRight, leftBtnClass, rightBtnClass, aosEffect, aosImgEffect, aosDuration, aosEasing]);
+}, [data, current, length, className, nextImage, prevImage, imgClassName, iconLeft, iconRight, leftBtnClass, rightBtnClass, aosEffect, aosImgEffect, aosDuration, aosEasing]);
 
-if (!Array.isArray(images) || images.length <= 0) {
+if (!Array.isArray(data) || data.length <= 0) {
     return null;
 }
 

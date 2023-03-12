@@ -19,7 +19,7 @@ const Education = () => {
               <div className='education__bar'></div>
               <p>Here are the certifications I have earned over the last few years, I am always looking for new ways to learn and grow as a developer.</p> 
           </div>
-          <Carousel className='image-section' imgClassName='cert-img' btnClassName='center-btn'  images={educationData} iconLeft="fa-solid fa-angle-left" iconRight="fa-solid fa-angle-right" aosEffect="flip-down" />
+          <Carousel className='image-section' imgClassName='cert-img' btnClassName='center-btn'  data={educationData} iconLeft="fa-solid fa-angle-left" iconRight="fa-solid fa-angle-right" aosEffect="flip-down" />
         </div> 
         <div className='education__technologies'>
           <div className="education__svg-container">

@@ -25,7 +25,7 @@ const children = useMemo(() => {
         className='carousel' 
         imgClassName='projects-image' 
         btnClassName='button__center'  
-        images={projectData} 
+        data={projectData} 
         iconLeft="fa-solid fa-arrow-left" 
         iconRight="fa-solid fa-arrow-right" 
         aosEffect="zoom-in-up"

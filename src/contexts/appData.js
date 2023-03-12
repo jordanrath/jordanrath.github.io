@@ -8,14 +8,12 @@
 
 //make sure use useContext hook to get the data and then use the data with array.map() to build the projects with...
 import React from "react";
-import { ModalData } from "../data/ModalData";
 import { EducationData } from "../data/EducationData";
 import { links } from "../data/appLinks";
 import { ProjectData } from "../data/ProjectData";
 
 //create a variable to store all of my data as an object so you can access specific types
 const appDataContext = {
-  modalData: ModalData,
   educationData: EducationData,
   appLinksData: links,
   projectData: ProjectData,
