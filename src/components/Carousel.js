@@ -5,7 +5,7 @@ import ImageLoader from './ImageLoader';
 import ModalButton from './ModalButton';
 
 //image supports on load and on error...  hook into in with callback() to set state in component to be 'loaded' 'loading' etc... spinner, color change, etc
-const Carousel = ({data, className: classNameProp, imgClassName, iconLeft, iconRight, btnClassName, aosEffect, aosImgEffect, aosDuration, aosEasing }) => {
+const Carousel = ({data, isOpen, className: classNameProp, imgClassName, iconLeft, iconRight, btnClassName, aosEffect, aosImgEffect, aosDuration, aosEasing }) => {
     const [current, setCurrent] = useState(0);
     const length = data.length;
     const className = classNames([classNameProp]);
@@ -16,7 +16,6 @@ const Carousel = ({data, className: classNameProp, imgClassName, iconLeft, iconR
     const nextImage = useCallback((event) => {
         event.preventDefault();
         event.stopPropagation();
-        console.log(current)
         setCurrent(current === length - 1 ? 0 : current + 1);
     }, [setCurrent, current, length]);
 
@@ -47,7 +46,16 @@ const memoizedMap = useMemo(() => {
                                                 : 
                                                     null}
                         </div>
-            {data.map(({ imageShown, alt, placeholderImage, subtitle, title, description, id }, index) => {
+            {data.map(({ 
+                imageShown, 
+                image, 
+                alt, 
+                placeholderImage, 
+                subtitle, 
+                title, 
+                description, 
+                id 
+            }, index) => {
                 return (  
                     <> 
                         {index === current && (
@@ -62,12 +70,23 @@ const memoizedMap = useMemo(() => {
                                 data-aos-duration={aosDuration}
                                 data-aos-easing={aosEasing}
                             >
+                                {
+                                !isOpen 
+                                    ?
                                 <ImageLoader 
                                     src={imageShown} 
                                     placeholderImage={placeholderImage} 
                                     alt={alt} 
                                     imgClassName={imgClassName}
-                                /> 
+                                />
+                                    :
+                                <ImageLoader 
+                                    src={image} 
+                                    placeholderImage={placeholderImage} 
+                                    alt={alt} 
+                                    imgClassName={imgClassName}
+                                />
+                                } 
                             </div>
                             <div className="carousel-project__container">
                                 <div 
@@ -85,7 +104,10 @@ const memoizedMap = useMemo(() => {
                                     <p className='carousel-project__description'>
                                       {description}
                                     </p>
-                                    <ModalButton className='carousel-project__btn' id={id} />
+                                    <ModalButton 
+                                        className='carousel-project__btn' 
+                                        id={id} 
+                                    />
                                 </div>
                             </div>
                         </div>)}
@@ -94,7 +116,7 @@ const memoizedMap = useMemo(() => {
             })}
         </div>
     )
-}, [data, current, length, className, nextImage, prevImage, imgClassName, iconLeft, iconRight, leftBtnClass, rightBtnClass, aosEffect, aosImgEffect, aosDuration, aosEasing]);
+}, [data, current, length, className, isOpen, nextImage, prevImage, imgClassName, iconLeft, iconRight, leftBtnClass, rightBtnClass, aosEffect, aosImgEffect, aosDuration, aosEasing]);
 
 if (!Array.isArray(data) || data.length <= 0) {
     return null;

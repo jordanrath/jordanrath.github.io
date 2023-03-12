@@ -23,7 +23,6 @@ const ModalButton = (props) => {
         const projectClickedID = (!Number.isNaN(rawID) ? rawID : null);
         setOpenedProjectID(projectClickedID);
         setOpenModal(true);
-          console.log(event.currentTarget);
       }, [setOpenModal]);
   
       const handleCloseModal = useCallback(() => {
@@ -41,14 +40,24 @@ const ModalButton = (props) => {
         const data = (modalData && modalData.id ? modalData : null);
 
         return (
-          <Modal data={data} isOpen={openModal} onRequestClose={handleCloseModal} />
+          <Modal 
+            data={data} 
+            isOpen={openModal} 
+            onRequestClose={handleCloseModal}
+          />
         )
       }, [projectData, openModal, handleCloseModal, openedProjectID]);
 
   return (
     <>
         {modalJSX}
-        <button onClick={handleOpenModal} project-id={id} className={className}>LEARN MORE</button>
+        <button 
+          onClick={handleOpenModal} 
+          project-id={id} 
+          className={className}
+        >
+          LEARN MORE
+        </button>
     </>
   )
 }
