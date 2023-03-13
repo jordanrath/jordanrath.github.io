@@ -12,9 +12,12 @@ const About = () => {
 
   return (
     <div className='about about-div section' id='about'>
-      <h3 data-aos="zoom-in-down">Hello, I'm Jordan.</h3>
+      <div className="about-title__container">
+        <h3 data-aos="zoom-in-down">Welcome</h3>
+        <span>.</span>
+      </div>
       <div className='about-context'>
-        <div className='about-image-container' data-aos={aosImgEffect}>
+        <div className='about-image__container' data-aos={aosImgEffect}>
           <ImageLoader 
             src={src} 
             placeholderImage={placeholderImage}
@@ -23,7 +26,7 @@ const About = () => {
           />
         </div>
        <div data-aos="zoom-in-down" className='about-text'>
-          <p>I'm a developer from Colorado who has a passion for programming and problem solving.  I've spent the last few 
+          <p>Hello, I'm Jordan.  I am from Colorado and I have a passion for programming and problem solving.  I've spent the last few 
             years studying different types of programming and developement while I was a full time Personal Trainer.  When I'm not writing 
             code you can find me hiking, snowboarding or fishing in the Colorado mountains. 
           </p>

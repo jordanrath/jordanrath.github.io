@@ -72,8 +72,7 @@ const memoizedMap = useMemo(() => {
                             className={index === current ? 'carousel-project active' : 'carousel-project'} 
                             key={index}
                         >
-                            <div 
-                                key={index} 
+                            <div    
                                 className='carousel-project__image'
                                 data-aos={aosImgEffect}
                                 data-aos-duration={aosDuration}
@@ -117,8 +116,7 @@ const memoizedMap = useMemo(() => {
                             className={index === current ? 'carousel-project active' : 'carousel-project'} 
                             key={index}
                         >
-                            <div 
-                                key={index} 
+                            <div   
                                 className='carousel-project__image'
                                 data-aos={aosImgEffect}
                                 data-aos-duration={aosDuration}
