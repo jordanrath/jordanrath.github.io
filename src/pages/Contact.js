@@ -4,7 +4,10 @@ import React from 'react';
 return (
   <section className='contact-section' id='contact'>
     <div className="contact-header__container">
-      <h1 data-aos="zoom-in-down">Let's get in touch...</h1>
+      <div className="contact-title__text">
+        <h1 data-aos="zoom-in-down">Let's get in touch</h1>
+        <span>.</span>
+      </div>
       <img className='contact__svg' src='/svg/javascript_illustration.png' alt='Contact'/>
     </div>
     <div className='contact-header-bar header-bar' data-aos="zoom-in-down"></div>
