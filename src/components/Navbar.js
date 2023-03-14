@@ -1,7 +1,8 @@
-import { React, useCallback } from 'react'
-import { links } from '../data/appLinks'
-import Menu from './Menu'
-import NavbarLink from './NavbarLink'
+import { React, useCallback } from 'react';
+import { links } from '../data/appLinks';
+import MenuOpen from './MenuOpen';
+import NavbarLink from './NavbarLink';
+import ThemeButton from './ThemeButton';
 
 const Navbar = (props) => {
   //create a callback to locate the correct data for smooth scroll and offset for Navbar
@@ -37,15 +38,23 @@ const Navbar = (props) => {
     )
   });
   
-  return (  
-    <nav className='navbar sticky'>
-      <div data-aos="fade-down" className='navTitle'>
-        <div>
-          {/* <Menu showMenu={true}/> */}
-          {linkJsx}
-        </div>
+  return (
+    <>
+      <div className="bar__top"></div>
+      <div className="bar__left"></div>
+      <div className="bar__right"></div>
+      <div className='navbar'>
+        {/* <div data-aos="fade-down" className='nav-title'> */}
+          <div className='nav-title__right'>
+            <ThemeButton />
+          </div>
+          <div className="nav-title__left">
+            <MenuOpen showMenu={true} links={linkJsx}/>
+            {/* {linkJsx} */}
+          </div>
+        {/* </div> */}
       </div>
-    </nav>
+    </>
   )
 }
 

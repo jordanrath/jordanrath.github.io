@@ -14,7 +14,10 @@ const children = useMemo(() => {
       <div className="project-header__container">
         <div className='project-title__container'>
           <div className="project-title-bar__container">
-            <h2 data-aos="zoom-in-down">Projects</h2>
+            <div className="project-title__text">
+              <h2 data-aos="zoom-in-down">Projects</h2>
+              <span>.</span>
+            </div>
             <div className='project-header-bar header-bar' data-aos="zoom-in-down"></div>
           </div>
           <p>Check out a few of the projects I've built.</p>

@@ -1,0 +1,24 @@
+import React, { useState } from 'react'
+import Menu from './Menu';
+
+const MenuOpen = (props) => {
+    const[menuOpen, setMenuOpen] = useState(false);
+    const { showMenu, links } = props;
+
+  return (
+    <div className='menu'>
+        <Menu onClick={() => setMenuOpen(!menuOpen)} menuOpen={menuOpen} showMenu={showMenu} />
+        <div 
+            className="menu__overlay"
+            style={{
+                top: menuOpen ? "20px" : "-120%",
+                transitionDelay: menuOpen ? "0s" : "0s"
+            }}
+        >
+            {links}
+        </div>
+    </div>
+  )
+}
+
+export default MenuOpen

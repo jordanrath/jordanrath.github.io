@@ -3,6 +3,7 @@ import { createRoot } from 'react-dom/client';
 import './styles.css';
 import App from './App';
 import Loader from './components/Loader';
+import ThemeProvider from './contexts/ThemeProvider';
 
 const rootElement = document.getElementById("root");
 const root = createRoot(rootElement);
@@ -20,9 +21,11 @@ loader.render(
 // after async operations, render the rest of app
 setTimeout(() => {
 root.render(
-  <StrictMode>
-      <App />
-  </StrictMode>
+  <ThemeProvider>
+    <StrictMode>
+        <App />
+    </StrictMode>
+  </ThemeProvider>
 );
 
 // remove loader once app is rendered

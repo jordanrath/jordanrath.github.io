@@ -26,7 +26,7 @@ const About = () => {
           />
         </div>
        <div data-aos="zoom-in-down" className='about-text'>
-          <p>Hello, I'm Jordan.  I am from Colorado and I have a passion for programming and problem solving.  I've spent the last few 
+          <p>I'm Jordan.  I am from Colorado and I have a passion for programming and problem solving.  I've spent the last few 
             years studying different types of programming and developement while I was a full time Personal Trainer.  When I'm not writing 
             code you can find me hiking, snowboarding or fishing in the Colorado mountains. 
           </p>

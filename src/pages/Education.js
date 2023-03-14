@@ -15,7 +15,7 @@ const Education = () => {
             <div className="education__title-text">         
               <h2>My Certifications</h2>
               <span>.</span>
-              </div>
+            </div>
               <div className='education__bar'></div>
               <p>Here are the certifications I have earned over the last few years, I am always looking for new ways to learn and grow as a developer.</p> 
           </div>
