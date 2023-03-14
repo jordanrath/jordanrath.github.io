@@ -46,14 +46,14 @@ const Education = () => {
             <div className='education__languages' data-aos="zoom-in-down">
               <ul className='education__languages-top'>
                 <li><FontAwesomeIcon className='svgIcon' icon="fa-brands fa-js-square" />Javascript</li>
-                <li><FontAwesomeIcon className='svgIcon' icon="fa-brands fa-python" />Python</li>
                 <li><FontAwesomeIcon className='svgIcon' icon="fa-brands fa-react" />React</li>
+                <li><FontAwesomeIcon className='svgIcon' icon="fa-brands fa-node-js" />Node.js</li>
                 <li><FontAwesomeIcon className='svgIcon' icon="fa-brands fa-html5" />HTML</li>
                 <li><FontAwesomeIcon className='svgIcon' icon="fa-brands fa-css3-alt" />CSS</li>
               </ul>
               <ul className="education__languages-bottom">
                 <li><FontAwesomeIcon className='svgIcon' icon="fa-brands fa-bootstrap" />Bootstrap</li>
-                <li><FontAwesomeIcon className='svgIcon' icon="fa-brands fa-node-js" />Node.js</li>
+                <li><FontAwesomeIcon className='svgIcon' icon="fa-brands fa-python" />Python</li>
                 <li><img className='svgIcon iconColor' src='/icons/express-js-icon.svg' alt='Express DB Logo' />Express</li>
                 <li><img className='svgIcon iconColor' src='/icons/mongodb-svgrepo-com.svg' alt='Mongo DB Logo' />MongoDB</li>
               </ul>

@@ -34,17 +34,19 @@ const Modal = ({ data, isOpen: openModal, onRequestClose: handleCloseModal }) =>
                 <h2>{subtitle}</h2>
               </div>
               <div className='modal-btn__container'>
-                <div className='modal-btn__navigate-container'>
-                  <a href={href} target="_blank" rel="noreferrer">
-                    See {title} in action!
-                    <button  className='modal-btn__navigate'>VIEW PROJECT</button>
-                  </a>
-                </div>
-                <div className="modal-btn__github-container">
-                  <a href={github} target="_blank" rel="noreferrer">
-                    Check out {title}'s code.
-                    <button  className='modal-btn__navigate'>VIEW PROJECT</button>
-                  </a>
+                <div className="modal-btn__navigate-flex">
+                  <div className='modal-btn__navigate-container'>
+                    <a href={href} target="_blank" rel="noreferrer">
+                      See {title} in action!
+                      <button  className='modal-btn__navigate'>VIEW PROJECT</button>
+                    </a>
+                  </div>
+                  <div className="modal-btn__github-container">
+                    <a href={github} target="_blank" rel="noreferrer">
+                      Check out {title}'s code.
+                      <button  className='modal-btn__navigate'>VIEW PROJECT</button>
+                    </a>
+                  </div>
                 </div>
                 <div className='modal-btn__close-container'>
                   <button onClick={handleCloseModal} className='modal-btn__close'>X</button>

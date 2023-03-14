@@ -15,7 +15,7 @@ const MenuOpen = (props) => {
                 transitionDelay: menuOpen ? "0s" : "0s"
             }}
         >
-            {links}
+            <button className="menu__buttons" onClick={() => setMenuOpen(!menuOpen)}>{links}</button>
         </div>
     </div>
   )

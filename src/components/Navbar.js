@@ -10,7 +10,6 @@ const Navbar = (props) => {
     event.preventDefault()
     const target = event.target.getAttribute('href')
     const location = document.querySelector(target).offsetTop
-
     window.scrollTo({
       left: 0,
       top: location - 64
@@ -34,7 +33,7 @@ const Navbar = (props) => {
 
     //render NavBarLink and spread the object {linkProps} into it as props
     return (
-      <NavbarLink {...linkProps} />
+      <NavbarLink {...linkProps} onClick={() => console.log('hi')} />
     )
   });
   
