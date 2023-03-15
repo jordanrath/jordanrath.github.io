@@ -8,6 +8,7 @@ export const ProjectData = [
         subtitle: 'React - CSS - Firebase',
         title: 'The Chatroom',
         description: 'The Chatroom is build with React and CSS with connection to Firebase Cloud Firestore database.  The Chatroom uses firebase to handle user authentication and user management.  Switch between light and dark mode as you chat with other users and explore the menu.',
+        href: "https://jordanrath.github.io/messaging-app/",
         github: "https://github.com/jordanrath/messaging-app",
         images: [
             {
