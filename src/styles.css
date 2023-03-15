@@ -2328,7 +2328,9 @@ body {
     }
 
     .ReactModal__Overlay .modal-btn__container {
-      gap: 50px;
+      flex-direction: column;
+      height: 100px;
+      gap: 20px;
       padding-bottom: 10px;
     }
 
