@@ -11,7 +11,7 @@ const MenuOpen = (props) => {
         <div 
             className="menu__overlay"
             style={{
-                top: menuOpen ? "20px" : "-120%",
+                top: menuOpen ? "10px" : "-120%",
                 transitionDelay: menuOpen ? "0s" : "0s"
             }}
         >

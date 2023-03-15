@@ -37,14 +37,14 @@ const Modal = ({ data, isOpen: openModal, onRequestClose: handleCloseModal }) =>
                 <div className="modal-btn__navigate-flex">
                   <div className='modal-btn__navigate-container'>
                     <a href={href} target="_blank" rel="noreferrer">
-                      See {title} in action!
-                      <button  className='modal-btn__navigate'>VIEW PROJECT</button>
+                      {/* See {title} in action! */}
+                      <button  className='modal-btn__navigate'>View Live</button>
                     </a>
                   </div>
                   <div className="modal-btn__github-container">
                     <a href={github} target="_blank" rel="noreferrer">
-                      Check out {title}'s code.
-                      <button  className='modal-btn__navigate'>VIEW PROJECT</button>
+                      {/* Check out {title}'s code. */}
+                      <button  className='modal-btn__navigate'>View Code</button>
                     </a>
                   </div>
                 </div>

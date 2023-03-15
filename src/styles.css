@@ -1331,7 +1331,7 @@ input:checked + .background-slider:before {
   align-items: center;
   justify-content: center;
   background-color: rgba(0, 0, 0, 0.4);
-  z-index: 10000;
+  z-index: 20000;
   backdrop-filter: blur(4px);
   position: fixed;
     top: 0;
@@ -1351,8 +1351,8 @@ input:checked + .background-slider:before {
   height: 100%;
   min-width: 1000px;
   aspect-ratio: 3/2;
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
+  /* border-top-left-radius: 8px;
+  border-top-right-radius: 8px; */
   border-bottom: 2px solid var(--primary);
 }
 
@@ -1414,7 +1414,7 @@ input:checked + .background-slider:before {
 .ReactModal__Overlay .modal__title {
   width: 80%;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-around;
   align-items: center;
   border-bottom: 1px solid var(--primary-variant-lm);
@@ -1466,7 +1466,7 @@ input:checked + .background-slider:before {
 }
 
 .modal-btn__navigate-flex {
-  width: 80%;
+  width: 75%;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -1488,7 +1488,7 @@ input:checked + .background-slider:before {
   border-radius: 2px;
   height: fit-content;
   max-width: 150px;
-  min-width: 100px;
+  min-width: 150px;
   padding: 10px 15px;
   float: right;
   cursor: pointer;
@@ -2105,9 +2105,21 @@ body {
     z-index: 10001;
   }
 
+  .menu__buttons a {
+    font-size: 30px;
+  }
+
 
   .about-context {
     width: 500px;
+  }
+
+  .about-div {
+    gap: 20px;
+  }
+
+  .about-text p {
+    padding-top: 15px;
   }
 
   .education__certs .carousel {
@@ -2139,6 +2151,7 @@ body {
 
   .carousel-project__description {
     margin-top: 15px;
+    margin-bottom: 15px;
   }
 
   .education__certs .carousel-project__title {
@@ -2159,15 +2172,21 @@ body {
   }
 
   .ReactModal__Content {
-    max-width: 400px;
+    max-width: 500px;
   }
 
   .ReactModal__Content .carousel {
-    min-height: 270px;
+    min-height: 400px;
   }
 
   .modal__img {
-    min-width: 400px;
+    min-width: 500px;
+    min-height: 400px;
+  }
+
+  .modal-btn__navigate-flex {
+    width: 100%;
+    gap: 75px;
   }
 
   .modal-btn__close-container {
@@ -2182,6 +2201,10 @@ body {
 
     .section.about {
       padding-top: 0px;
+    }
+
+    .menu__overlay {
+      top: 10px;
     }
 
     .about {
@@ -2275,6 +2298,7 @@ body {
     }
 
     .education__skills-list {
+      width: 100%;
       gap: unset;
       align-items: center;
       flex-direction: column;
@@ -2284,6 +2308,44 @@ body {
     .projects-section,
     .contact-section {
       padding-bottom: 150px;
+    }
+
+    .ReactModal__Content {
+      max-width: 350px;
+    }
+  
+    .ReactModal__Content .carousel {
+      min-height: 300px;
+    }
+  
+    .modal__img {
+      min-width: 350px;
+      min-height: 300px;
+    }
+
+    .ReactModal__Overlay .modal-btn__close-container {
+      flex-direction: column;
+    }
+
+    .ReactModal__Overlay .modal-btn__container {
+      gap: 50px;
+      padding-bottom: 10px;
+    }
+
+    .modal-btn__navigate-flex {
+      justify-content: flex-start;
+      align-items: flex-start;
+      padding-left: 0px;
+      gap: 40px;
+    }
+
+    .modal-btn__navigate-container a {
+      padding-left: 5px;
+    }
+
+    .modal-btn__close-container {
+      min-width: unset;
+      padding: 0;
     }
 
     h2 {
