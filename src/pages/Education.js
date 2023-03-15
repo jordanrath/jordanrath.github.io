@@ -28,7 +28,7 @@ const Education = () => {
             iconRight="fa-solid fa-arrow-right" 
             aosEffect="zoom-in-up"
             aosImgEffect="fade-left"
-            aosDuration="500"
+            aosDuration="750"
             aosEasing="ease-in-sine"
           />
         </div> 

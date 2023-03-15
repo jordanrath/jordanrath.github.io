@@ -799,8 +799,7 @@ input:checked + .background-slider:before {
 .education__certs .carousel {
   width: 100%;
   height: 100%;
-  max-width: 850px;
-  min-height: 350px;
+  min-height: 400px;
 }
 
 .education__certs .carousel-project__description {
@@ -1816,11 +1815,11 @@ select:autofill:focus {
 }
 
 .light-mode .carousel-project {
-  background-color: var(--primary-variant-lm);
+  background-color: var(--primary-variant);
 }
 
 .light-mode .carousel-project__btn {
-  background-color: var(--primary-variant-lm);
+  background-color: var(--primary-variant);
 }
 
 .light-mode .carousel-project__subtitle,
@@ -1834,15 +1833,15 @@ select:autofill:focus {
 }
 
 .light-mode .carousel__nav {
-  background-color: var(--primary-variant-lm);
+  background-color: var(--primary-variant);
 }
 
 .light-mode .carousel__nav .left-arrow {
-  border-right: 1px solid var(--primary-variant);
+  border-right: 1px solid var(--background-lm);
 }
 
 .light-mode .carousel__nav .right-arrow {
-  border-left: 1px solid var(--primary-variant);
+  border-left: 1px solid var(--background-lm);
 }
 
 .light-mode .contact-section {
@@ -1970,8 +1969,16 @@ body {
     width: 100%;
   }
 
+  h2 {
+    font-size: 30px;
+  }
+
   .education__certs .carousel {
     min-height: 650px;
+  }
+
+  .education__title-certs {
+    max-width: unset;
   }
 
   .carousel-project {
@@ -2012,8 +2019,13 @@ body {
   }
 
   .education__technologies .education__title-container {
-    width: 350px;
+    width: 100%;
     justify-content: center;
+  }
+
+  .education__title-tech {
+    justify-content: flex-start;
+    align-items: flex-start;
   }
 
   .education__title-text {
@@ -2031,11 +2043,23 @@ body {
   .education__title-skills {
     width: 100%;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
   }
 
   .form-container {
     width: 100%;
+  }
+
+  .ReactModal__Content {
+    max-width: 600px;
+  }
+
+  .ReactModal__Content .carousel {
+    min-height: 400px;
+  }
+
+  .modal__img {
+    min-width: 600px;
   }
 }
 
@@ -2056,6 +2080,32 @@ body {
     width: 500px;
   }
 
+  .navbar {
+    position: sticky;
+    z-index: 10000;
+    top: 0;
+    width: 100%;
+    height: 64px;
+    background-color: var(--background-dm);
+    box-shadow: 0 14px 10px -10px var(--background-dm);
+  }
+
+  .light-mode .navbar {
+    background-color: var(--background-variant-lm);
+    box-shadow: 0 14px 10px -10px var(--background-variant-lm);
+  }
+
+  .nav-title__left,
+  .nav-title__right {
+    top: 17px;
+  }
+
+  .background-switch {
+    top: 25px;
+    z-index: 10001;
+  }
+
+
   .about-context {
     width: 500px;
   }
@@ -2065,7 +2115,9 @@ body {
     min-height: 500px;
   }
 
-  .education__svg {
+  .education__svg,
+  .project__svg,
+  .contact__svg {
     max-width: 175px;
     max-height: 150px;
   }
@@ -2102,25 +2154,38 @@ body {
     max-width: 400px;
   }
 
-  @media only screen and (max-width: 550px) {
-
-
-    .project-header__container {
-      flex-direction: column;
-    }
+  .project-header__container {
+    flex-direction: column;
   }
 
-  @media only screen and (max-width: 450px) {
+  .ReactModal__Content {
+    max-width: 400px;
+  }
+
+  .ReactModal__Content .carousel {
+    min-height: 270px;
+  }
+
+  .modal__img {
+    min-width: 400px;
+  }
+
+  .modal-btn__close-container {
+    min-width: 50px;
+  }
+}
+
+  @media only screen and (max-width: 535px) {
     .sections {
       width: 350px;
     }
 
     .section.about {
-      padding-top: 70px;
+      padding-top: 0px;
     }
 
     .about {
-      padding-bottom: 300px;
+      padding-bottom: 150px;
     }
 
     .about-context {
@@ -2143,7 +2208,7 @@ body {
       line-height: unset;
       font-size: 18px;
       padding-left: unset;
-      padding: 0 10px;
+      padding: 20px 10px 0 10px;
     }
 
     .education__title-certs {
@@ -2152,7 +2217,7 @@ body {
     }
 
     .education__title-certs .education__title-text h2 {
-      font-size: 35px;
+      font-size: 25px;
     }
 
     .projects-image.loaded {
@@ -2168,7 +2233,11 @@ body {
     }
 
     .education__title-text {
-      width: 350px;
+      width: unset;
+    }
+
+    .education__title-tech .education__title-text {
+      width: 100%;
     }
 
     .education__title-text h2 {
@@ -2207,12 +2276,13 @@ body {
 
     .education__skills-list {
       gap: unset;
-      align-items: unset;
+      align-items: center;
       flex-direction: column;
     }
 
     .education__container,
-    .projects-section {
+    .projects-section,
+    .contact-section {
       padding-bottom: 150px;
     }
 
@@ -2247,5 +2317,4 @@ body {
     .footer-bottom p {
       font-size: 13px;
     }
-  }
 }

@@ -5,7 +5,7 @@ import Carousel from '../components/Carousel.js'
 ReactModal.setAppElement('#root')
 
 const Modal = ({ data, isOpen: openModal, onRequestClose: handleCloseModal }) => {
-    const { subtitle, title, description, images=[], href, github } = (data ?? {});
+    const { subtitle, title, images=[], href, github } = (data ?? {});
 
     return (
         <div> 
