@@ -22,9 +22,8 @@ body {
   position: relative;
 }
 
+/* ------------------------- Colors ------------------------- */
 :root {
-  /* COLORS  */
-  /* primary */
   --primary: #64b4f6;
   --primary-lm: #aadcec;
   --primary-variant-lm: #0f1b61;
@@ -48,8 +47,6 @@ body {
   --on-error: #FFFFFF;
   --error-dm: #CF6679;
   --error-lm: #B00020;
-  /* main */
-  /* grey */
   --grey-50: #f2f4f8;
   --grey-100:  #c9cacf;
   --grey-150: #a6a6a6;
@@ -57,8 +54,6 @@ body {
   --grey-250: #6d6f78;
   --grey-1000: #333538;
   --grey-dark: #262626;
-
-  /* rest */
   --black: #222;
   --white: #fff;
   --red: #CF291D;
@@ -2014,8 +2009,19 @@ body {
     font-size: 30px;
   }
 
+  .about {
+    margin-top: 30px;
+    padding-bottom: 100px;
+  }
+
+  .education__container,
+  .projects-section {
+    padding-bottom: 100px;
+  }
+
   .about-context {
     width: 500px;
+    padding-top: 20px;
   }
 
   .about-div {
