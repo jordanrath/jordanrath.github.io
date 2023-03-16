@@ -2207,6 +2207,10 @@ body {
       top: 10px;
     }
 
+    .menu__buttons a {
+      font-size: 20px;
+    }
+
     .about {
       padding-bottom: 150px;
     }
