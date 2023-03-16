@@ -1815,33 +1815,35 @@ select:autofill:focus {
 }
 
 .light-mode .carousel-project {
-  background-color: var(--primary-variant);
+  background-color: var(--background-variant-lm);
 }
 
 .light-mode .carousel-project__btn {
-  background-color: var(--primary-variant);
+  background-color: var(--background-variant-lm);
 }
 
 .light-mode .carousel-project__subtitle,
 .light-mode .carousel-project__description {
-  color: var(--background-secondary-lm)
+  color: var(--on-primary-modal)
 }
 
 .light-mode .carousel-project__title,
 .light-mode .carousel-project__btn {
-  color: var(--on-primary);
+  color: var(--on-secondary);
 }
 
 .light-mode .carousel__nav {
-  background-color: var(--primary-variant);
+  background-color: var(--primary-lm);
 }
 
 .light-mode .carousel__nav .left-arrow {
-  border-right: 1px solid var(--background-lm);
+  border-right: 1px solid var(--background-secondary);
+  color: var(--background-secondary);
 }
 
 .light-mode .carousel__nav .right-arrow {
-  border-left: 1px solid var(--background-lm);
+  border-left: 1px solid var(--background-secondary);
+  color: var(--background-secondary);
 }
 
 .light-mode .contact-section {
