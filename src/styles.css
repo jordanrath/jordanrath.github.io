@@ -633,6 +633,16 @@ input:checked + .background-slider:before {
   text-shadow: none;
 }
 
+.light-mode .project-title__text span,
+.light-mode .education__title-text span,
+.light-mode .about-title__container span {
+  color: var(--secondary);
+}
+
+.light-mode .education__title-text span {
+  color: var(--secondary);
+}
+
 .education__technologies {
   display: flex;
   justify-content: flex-end;
