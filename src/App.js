@@ -18,6 +18,7 @@ const App = () => {
       duration: 500,
       offset: 50,
       easing: 'ease-in-out-sine',
+      disable: 'mobile',
     });
     AOS.refresh();
   }, []);
