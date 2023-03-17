@@ -66,11 +66,11 @@ const memoizedMap = useMemo(() => {
                 id 
             }, index) => {
                 return (  
-                    <> 
+                    <React.Fragment key={index}> 
                         {index === current && !isOpen && (
                         <div 
                             className={index === current ? 'carousel-project active' : 'carousel-project'} 
-                            key={index}
+                            key={`Project - ${index}`}
                         >
                             <div    
                                 className='carousel-project__image'
@@ -114,7 +114,7 @@ const memoizedMap = useMemo(() => {
                         {index === current && isOpen && (
                         <div 
                             className={index === current ? 'carousel-project active' : 'carousel-project'} 
-                            key={index}
+                            key={ `Modal - ${index}`}
                         >
                             <div   
                                 className='carousel-project__image'
@@ -133,7 +133,7 @@ const memoizedMap = useMemo(() => {
                             </div>
                                 <Modal />
                         </div>)}
-                    </>    
+                    </React.Fragment>    
                 )
             })}
         </div>

@@ -675,6 +675,11 @@ input:checked + .background-slider:before {
   width: 250px;
 }
 
+.education__svg {
+  /* max-width: 250px;
+  max-height: 250px; */
+}
+
 .education__title-tech {
   display: flex;
   flex-direction: column;
@@ -1008,6 +1013,14 @@ input:checked + .background-slider:before {
   margin: 0;
   font-weight: 700;
   text-decoration: none;
+}
+
+.carousel-project__btn:hover {
+  color: var(--primary);
+}
+
+.light-mode .carousel-project__btn:hover {
+  color: var(--primary);
 }
 
 .projects-section {
@@ -1721,16 +1734,16 @@ select:autofill:focus {
 }
 
 .light-mode .carousel__nav {
-  background-color: var(--primary-lm);
+  background-color: var(--background-variant-lm);
 }
 
 .light-mode .carousel__nav .left-arrow {
-  border-right: 1px solid var(--background-secondary);
+  border: 1px solid var(--background-scroll-lm);
   color: var(--background-secondary);
 }
 
 .light-mode .carousel__nav .right-arrow {
-  border-left: 1px solid var(--background-secondary);
+  border: 1px solid var(--background-scroll-lm);
   color: var(--background-secondary);
 }
 
@@ -1748,6 +1761,12 @@ select:autofill:focus {
 
 .light-mode .modal-btn__navigate {
   background-color: var(--primary-lm);
+  color: var(--on-secondary);
+  border: none;
+}
+
+.light-mode .modal-btn__navigate:hover {
+  background-color: var(--secondary);
 }
 
 .light-mode .modal-btn__close {
@@ -1903,7 +1922,7 @@ body {
   }
 
   .carousel-project__container{
-    width: 75%;
+    width: 90%;
     height: 100%;
   }
 
@@ -1911,14 +1930,18 @@ body {
     width: 100%;
   }
 
-  .carousel-project__title {
-    width: 550px;
+  .carousel-project__description{
+    margin-top: 10px;
   }
 
   .carousel-project__image,
   .projects-image.loaded {
     width: 100%;
     max-width: 486px;
+  }
+
+  .carousel-project.active .carousel-project__image {
+    max-width: 600px;
   }
 
   .projects-section .carousel {
@@ -1981,7 +2004,7 @@ body {
   }
 }
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 670px) {
   .bar__top,
   .bar__bottom {
     height: 10px;
@@ -2126,6 +2149,10 @@ body {
     min-height: 400px;
   }
 
+  .ReactModal__Overlay .modal__title h1 {
+    font-size: 38px;
+  }
+
   .modal__img {
     min-width: 500px;
     min-height: 400px;
@@ -2141,7 +2168,7 @@ body {
   }
 }
 
-  @media only screen and (max-width: 535px) {
+  @media only screen and (max-width: 540px) {
     p,
     a,
     li {
@@ -2215,6 +2242,10 @@ body {
       0 2.5px 1.5px rgba(0, 0, 0, 0.078),
       0 4px 18px rgba(0, 0, 0, 0.086),
       0 9px 15px rgba(0, 0, 0, 0.13);
+    }
+
+    .education__certs .carousel-project__title {
+      line-height: 1.3;
     }
 
     .education__title-certs {
