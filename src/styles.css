@@ -1019,6 +1019,7 @@ input:checked + .background-slider:before {
 .project-title__container {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 30px;
 }
 
@@ -1036,7 +1037,7 @@ input:checked + .background-slider:before {
 .project-title-bar-image__container {
   display: flex;
   flex-direction: row;
-  gap: 25%;
+  gap: 20px;
 }
 
 .project-title-bar__container {
