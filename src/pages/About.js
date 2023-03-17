@@ -8,16 +8,16 @@ const About = () => {
   const placeholderImage = '/images/myImage_small.jpg';
   const alt = 'My dog Cooper and I';
   const imgClassName = 'about-image' ;
-  const aosImgEffect = "zoom-in-down" ;
+  // const aosImgEffect = "zoom-in-down" ;
 
   return (
     <div className='about about-div section' id='about'>
       <div className="about-title__container">
-        <h3 data-aos="zoom-in-down">Welcome</h3>
-        <span>.</span>
+        <h3 data-aos="flip-down" data-aos-duration="800">Welcome</h3>
+        <span data-aos="zoom-in-down" data-aos-duration="800">.</span>
       </div>
       <div className='about-context'>
-        <div className='about-image__container' data-aos={aosImgEffect}>
+        <div className='about-image__container'>
           <ImageLoader 
             src={src} 
             placeholderImage={placeholderImage}
@@ -25,7 +25,7 @@ const About = () => {
             imgClassName={imgClassName}
           />
         </div>
-       <div data-aos="zoom-in-down" className='about-text'>
+       <div className='about-text'>
           <p>I'm Jordan.  I am from Colorado and I have a passion for programming and problem solving.  I've spent the last few 
             years studying different types of programming and developement while I was a full time Personal Trainer.  When I'm not writing 
             code you can find me hiking, snowboarding or fishing in the Colorado mountains. 

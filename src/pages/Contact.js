@@ -5,13 +5,13 @@ return (
   <section className='contact-section' id='contact'>
     <div className="contact-header__container">
       <div className="contact-title__text">
-        <h2 data-aos="zoom-in-down">Let's get in touch</h2>
-        <span>.</span>
+        <h2>Let's get in touch</h2>
+        <span data-aos="zoom-in-down">.</span>
       </div>
       <img className='contact__svg' src='/svg/javascript_illustration.png' alt='Contact'/>
     </div>
-    <div className='contact-header-bar header-bar' data-aos="zoom-in-down"></div>
-    <form className='form-container' action="https://formsubmit.co/rath.jordan@icloud.com" method="POST" data-aos="zoom-in-down">
+    <div className='contact-header-bar header-bar' data-aos="fade-right"></div>
+    <form className='form-container' action="https://formsubmit.co/rath.jordan@icloud.com" method="POST">
         <div className="contact-form__title">
           <label htmlFor="name" >
             Name

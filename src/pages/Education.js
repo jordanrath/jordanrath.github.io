@@ -10,13 +10,13 @@ const Education = () => {
   return (
     <div className='education__container'>
        <div className='education__certs'>
-          <div className='education__title-certs' data-aos="zoom-in-down">
+          <div className='education__title-certs'>
           {/* <img className='slash__background' src='/svg/slashes.svg' alt='Slash background'/>   */}
             <div className="education__title-text">         
               <h2>My Certifications</h2>
-              <span>.</span>
+              <span data-aos="zoom-in-down">.</span>
             </div>
-              <div className='education__bar'></div>
+              <div className='education__bar' data-aos="fade-right"></div>
               <p>Here are the certifications I have earned over the last few years, I am always looking for new ways to learn and grow as a developer.</p> 
           </div>
           <Carousel 
@@ -37,13 +37,13 @@ const Education = () => {
               <img className='education__svg' src='/svg/My project (5).png' alt='Computer Languages' />
               </div>
             <div className="education__title-container">
-              <div className='education__title-tech' data-aos="zoom-in-down">
+              <div className='education__title-tech'>
                 <div className='education__title-text'>
                   <h2>Languages and Frameworks</h2>
-                  <span>.</span>
+                  <span data-aos="zoom-in-down">.</span>
                 </div>
               </div>      
-            <div className='education__languages' data-aos="zoom-in-down">
+            <div className='education__languages'>
               <ul className='education__languages-top'>
                 <li><FontAwesomeIcon className='svgIcon' icon="fa-brands fa-js-square" />Javascript</li>
                 <li><FontAwesomeIcon className='svgIcon' icon="fa-brands fa-react" />React</li>
@@ -60,7 +60,7 @@ const Education = () => {
             </div>
             </div>
         </div>
-        <div className='education__skills' data-aos="zoom-in-down">
+        <div className='education__skills'>
           <div className="education__svg-container">
             <img className='education__svg' src='/svg/My project (6).png' alt='Computer Languages' />
           </div>
@@ -68,7 +68,7 @@ const Education = () => {
             <div className="education__title-container">
               <div className="education__title-text">
                 <h2>Skills and Strengths</h2>
-                <span>.</span>
+                <span data-aos="zoom-in-down">.</span>
               </div>
             {/* <div className='education__bar'></div> */}
             </div>
