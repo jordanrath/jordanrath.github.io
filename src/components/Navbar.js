@@ -1,5 +1,6 @@
 import { React, useCallback } from 'react';
 import { links } from '../data/appLinks';
+import BackgroundSelector from './BackgroundSelector';
 import MenuOpen from './MenuOpen';
 import NavbarLink from './NavbarLink';
 import ThemeButton from './ThemeButton';
@@ -46,6 +47,7 @@ const Navbar = (props) => {
         {/* <div data-aos="fade-down" className='nav-title'> */}
           <div className='nav-title__right'>
             <ThemeButton />
+            <BackgroundSelector />
           </div>
           <div className="nav-title__left">
             <MenuOpen showMenu={true} links={linkJsx}/>

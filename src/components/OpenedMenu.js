@@ -1,6 +1,5 @@
 import React from 'react'
 import { useState } from 'react'
-import BackgroundSelector from './BackgroundSelector';
 import Menu from './Menu';
 
 const OpenedMenu = () => {
@@ -13,9 +12,6 @@ const OpenedMenu = () => {
                 <Menu onClick={() => setMenuOpen(!menuOpen)} />
                 <div className="nav__left">
                     {!menuOpen ? 'Menu' : 'Close'}
-                </div>
-                <div className="nav__right">
-                    <BackgroundSelector />
                 </div>
             </div>
             <div className="menu__overlay"

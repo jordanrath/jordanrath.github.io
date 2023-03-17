@@ -8,8 +8,7 @@
  import Projects from './pages/Projects';
  import Education from './pages/Education';
  import Contact from './pages/Contact';
- import Footer from "./components/Footer";
-import BackgroundSelector from './components/BackgroundSelector'; 
+ import Footer from "./components/Footer"; 
 
 const App = () => {
 
@@ -41,7 +40,6 @@ const App = () => {
    return (
     <main id='home'>
       <Navbar {...refProps}/>
-      <BackgroundSelector />
       <div className="sections">
         <section className='about' id='about' ref={aboutRef}>
           <About />

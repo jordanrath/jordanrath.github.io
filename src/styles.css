@@ -2146,7 +2146,8 @@ body {
       top: 10px;
     }
 
-    .menu__buttons a {
+    .menu__buttons a,
+    .light-mode .menu__buttons a {
       font-size: 20px;
     }
 
