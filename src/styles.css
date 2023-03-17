@@ -28,7 +28,7 @@ body {
   --primary-lm: #aadcec;
   --primary-variant-lm: #0f1b61;
   --primary-variant: #1c75d2;
-  --secondary-lm: #7f00e0;
+  --secondary-lm: #ba60ff;
   --secondary: #00bab8;
   --secondary-variant: #008072;
   --background: #404040;
@@ -42,7 +42,7 @@ body {
   --on-primary: #FFFFFF;
   --on-secondary: #000000;
   --on-primary-modal: #7e7e7e;
-  --on-toggle-lm: #7f00e0;
+  --on-toggle-lm: #ba60ff;
   --on-toggle-dm: #ffdaa5;
   --on-error: #FFFFFF;
   --error-dm: #CF6679;
@@ -545,7 +545,7 @@ input:checked + .background-slider:before {
 }
 
 .about-title__container span {
-  color: var(--secondary);
+  color: var(--secondary-lm);
   font-size: 70px;
   text-shadow: none;
 }
@@ -628,7 +628,7 @@ input:checked + .background-slider:before {
 }
 
 .education__title-text span {
-  color: var(--secondary);
+  color: var(--secondary-lm);
   font-size: 50px;
   text-shadow: none;
 }
@@ -678,7 +678,7 @@ input:checked + .background-slider:before {
   display: inherit;
   justify-content: flex-end;
   align-items: flex-end;
-  color: var(--primary);
+  color: var(--secondary);
   width: 100px;
   border-top: solid;
 }
@@ -1029,7 +1029,7 @@ input:checked + .background-slider:before {
 
 .project-title__text span {
   font-size: 50px;
-  color: var(--secondary);
+  color: var(--secondary-lm);
   text-shadow: none;
 }
 
@@ -1053,7 +1053,7 @@ input:checked + .background-slider:before {
   border-top: 3px solid;
   margin: 0;
   width: 75px;
-  color: var(--primary);
+  color: var(--secondary);
 }
 
 .project-title__container p {
@@ -1447,7 +1447,7 @@ input:checked + .background-slider:before {
 
 .contact-title__text span {
   font-size: 50px;
-  color: var(--secondary);
+  color: var(--secondary-lm);
 }
 
 .contact__svg {
@@ -2043,6 +2043,11 @@ body {
     max-width: 175px;
     max-height: 150px;
   }
+
+  .education__skills .education__svg-container .education__svg {
+    max-width: 130px;
+    max-height: 130px;
+  }
   
   .light-mode .carousel {
     box-shadow:
@@ -2199,7 +2204,7 @@ body {
     }
 
     .education__title-certs .education__title-text h2 {
-      font-size: 25px;
+      font-size: 22px;
     }
 
     .projects-image.loaded {
@@ -2223,7 +2228,7 @@ body {
     }
 
     .education__title-text h2 {
-      font-size: 25px;
+      font-size: 22px;
       
       align-items: flex-end;
     }
@@ -2310,7 +2315,7 @@ body {
     }
 
     h2 {
-      font-size: 25px;
+      font-size: 22px;
     }
 
     .btn-container  button {
