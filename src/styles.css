@@ -719,12 +719,12 @@ input:checked + .background-slider:before {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  gap: 30px;
+  gap: 10px;
   max-width: 70%;
 }
 
 .education__title-certs p {
-  margin: 0;
+  margin-top: 20px;
 }
 
 .education__certs .carousel {
@@ -1033,10 +1033,16 @@ input:checked + .background-slider:before {
   text-shadow: none;
 }
 
+.project-title-bar-image__container {
+  display: flex;
+  flex-direction: row;
+  gap: 25%;
+}
+
 .project-title-bar__container {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 10px;
 }
 
 
@@ -1058,6 +1064,7 @@ input:checked + .background-slider:before {
 
 .project-title__container p {
   color: var(--on-primary);
+  margin: 0;
 }
 
 .projects-section h1 {

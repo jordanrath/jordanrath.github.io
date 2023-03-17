@@ -13,16 +13,18 @@ const children = useMemo(() => {
     <>  
       <div className="project-header__container">
         <div className='project-title__container'>
-          <div className="project-title-bar__container">
-            <div className="project-title__text">
-              <h2 data-aos="zoom-in-down">Projects</h2>
-              <span>.</span>
+          <div className="project-title-bar-image__container">
+            <div className="project-title-bar__container">
+              <div className="project-title__text">
+                <h2 data-aos="zoom-in-down">Projects</h2>
+                <span>.</span>
+              </div>
+              <div className='project-header-bar header-bar' data-aos="zoom-in-down"></div>
             </div>
-            <div className='project-header-bar header-bar' data-aos="zoom-in-down"></div>
+            <img className='project__svg' src='/svg/projects-icon.png' alt="Projects Computer" />
           </div>
           <p>Check out a few of the projects I've built.</p>
         </div>
-        <img className='project__svg' src='/svg/projects-icon.png' alt="Projects Computer" />
       </div>
       <div className='project-header-bar header-bar' data-aos="zoom-in-down"></div>
       <Carousel 
