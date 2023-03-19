@@ -13,7 +13,7 @@ const BackgroundSelector = () => {
     <div>
         <label className="background-switch">
             <input type="checkbox" onClick={handleClick} />
-            <span className="background-slider"></span>
+            <span className="background-slider" data-aos="fade-in"></span>
         </label>
         {isShown && <BackgroundParticles />}
     </div>

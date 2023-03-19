@@ -14,6 +14,7 @@ const ThemeButton = () => {
         <ThemeContext.Consumer>
             {({ changeTheme }) => (
                 <div
+                    data-aos="fade-in"
                     className='theme-btn'
                     onClick={() => {
                     setDarkMode(!darkMode); 
