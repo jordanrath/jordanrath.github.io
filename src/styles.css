@@ -954,7 +954,7 @@ input:checked + .background-slider:before {
   padding: 11px 15px;
   position: relative;
   color: var(--on-primary);
-  border-right: 1px solid var(--background-secondary);
+  border-right: 1px solid var(--background-scroll-lm);
 }
 
 .carousel__nav .right-arrow {
@@ -962,7 +962,7 @@ input:checked + .background-slider:before {
   padding: 11px 15px;
   position: relative;
   color: var(--on-primary);
-  border-left: 1px solid var(--background-secondary);
+  border-left: 1px solid var(--background-scroll-lm);
 }
 
 .carousel-project__subtitle {
@@ -1733,12 +1733,10 @@ select:autofill:focus {
 }
 
 .light-mode .carousel__nav .left-arrow {
-  border: 1px solid var(--background-scroll-lm);
   color: var(--background-secondary);
 }
 
 .light-mode .carousel__nav .right-arrow {
-  border: 1px solid var(--background-scroll-lm);
   color: var(--background-secondary);
 }
 
@@ -2161,10 +2159,28 @@ body {
 
   .ReactModal__Content {
     max-width: 500px;
+    box-shadow: 
+    0 -3.5px 2.2px rgba(0, 0, 0, 0.04), 
+    0 -2.9px 5.3px rgba(0, 0, 0, 0.05), 
+    0 -1px 10px rgba(76, 126, 190, 0.16), 
+    0 2.5px 1.5px rgba(0, 0, 0, 0.078), 
+    0 4px 18px rgba(0, 0, 0, 0.086), 
+    0 9px 15px rgba(76, 126, 190, 0.13);
+  }
+
+  .light-mode .ReactModal__Content {
+    box-shadow: 
+    0 -3.5px 2.2px rgba(0, 0, 0, 0.04), 
+    0 -2.9px 5.3px rgba(0, 0, 0, 0.05), 
+    0 -1px 10px rgba(0, 0, 0, 0.16), 
+    0 2.5px 1.5px rgba(0, 0, 0, 0.078), 
+    0 4px 18px rgba(0, 0, 0, 0.086), 
+    0 9px 15px rgba(0, 0, 0, 0.13);
   }
 
   .ReactModal__Content .carousel {
     min-height: 400px;
+    box-shadow: unset;
   }
 
   .ReactModal__Overlay .modal__title h1 {
@@ -2367,10 +2383,14 @@ body {
     }
 
     .modal-btn__navigate-flex {
-      justify-content: flex-start;
-      align-items: flex-start;
+      justify-content: space-evenly;
+      align-items: center;
       padding-left: 0px;
-      gap: 40px;
+      gap: unset;
+    }
+
+    .modal-btn__close {
+      padding-right: 15px;
     }
 
     .modal-btn__navigate-container a {

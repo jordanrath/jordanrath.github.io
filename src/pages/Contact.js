@@ -8,7 +8,7 @@ return (
         <h2 data-aos="fade-in">Let's get in touch</h2>
         <span data-aos="zoom-in-down">.</span>
       </div>
-      <img className='contact__svg' src='/svg/javascript_illustration.png' alt='Contact'/>
+      <img className='contact__svg' src='/svg/javascript_illustration.png' alt='Contact' data-aos="fade-in" />
     </div>
     <div className='contact-header-bar header-bar' data-aos="fade-right"></div>
     <form className='form-container' action="https://formsubmit.co/rath.jordan@icloud.com" method="POST" data-aos="fade-in">

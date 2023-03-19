@@ -21,7 +21,7 @@ const children = useMemo(() => {
               </div>
               <div className='project-header-bar header-bar' data-aos="fade-right"></div>
             </div>
-            <img className='project__svg' src='/svg/projects-icon.png' alt="Projects Computer" />
+            <img className='project__svg' src='/svg/projects-icon.png' alt="Projects Computer" data-aos="fade-in" />
           </div>
           <p data-aos="fade-in">Check out a few of the projects I've built.</p>
         </div>

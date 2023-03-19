@@ -34,7 +34,7 @@ const Education = () => {
         </div> 
         <div className='education__technologies'>
           <div className="education__svg-container">
-              <img className='education__svg' src='/svg/My project (5).png' alt='Computer Languages' />
+              <img className='education__svg' src='/svg/My project (5).png' alt='Computer Languages' data-aos="fade-in" />
               </div>
             <div className="education__title-container">
               <div className='education__title-tech'>
@@ -62,7 +62,7 @@ const Education = () => {
         </div>
         <div className='education__skills'>
           <div className="education__svg-container">
-            <img className='education__svg' src='/svg/My project (6).png' alt='Computer Languages' />
+            <img className='education__svg' src='/svg/My project (6).png' alt='Computer Languages' data-aos="fade-in" />
           </div>
           <div className="education__title-skills">
             <div className="education__title-container">
