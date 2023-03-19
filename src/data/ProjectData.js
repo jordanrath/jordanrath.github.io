@@ -37,7 +37,7 @@ export const ProjectData = [
         alt: 'JavaScript Food Tracker',
         subtitle: 'JavaScript - HTML - CSS',
         title: 'Food Tracker',
-        description: 'Built with JavaScript, HTML, CSS and is bundled with Parcel.  The app allows you to choose from a number of foods and customize their macro-nutrient profile.  Once a food has been added, the total calories will be calculated and will insert the results to a graph that stores the collective data.',
+        description: 'Built with JavaScript, HTML, CSS and bundled with Parcel.  The app allows you to choose from a number of foods and customize their macro-nutrient profile.  The total calories will be calculated and inserted to a graph that stores the collective data.',
         href: "https://jordanrath.github.io/nutrition-tracker/",
         github: "https://github.com/jordanrath/nutrition-tracker",
         images: [
