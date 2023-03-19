@@ -8,7 +8,7 @@ const About = () => {
   const placeholderImage = '/images/myImage_small.jpg';
   const alt = 'My dog Cooper and I';
   const imgClassName = 'about-image' ;
-  // const aosImgEffect = "zoom-in-down" ;
+  const aosImgEffect = "zoom-in" ;
 
   return (
     <div className='about about-div section' id='about'>
@@ -23,9 +23,10 @@ const About = () => {
             placeholderImage={placeholderImage}
             alt={alt}
             imgClassName={imgClassName}
+            aosImgEffect={aosImgEffect}
           />
         </div>
-       <div className='about-text'>
+       <div className='about-text' data-aos="fade-in">
           <p>I'm Jordan.  I am from Colorado and I have a passion for programming and problem solving.  I've spent the last few 
             years studying different types of programming and developement while I was a full time Personal Trainer.  When I'm not writing 
             code you can find me hiking, snowboarding or fishing in the Colorado mountains. 

@@ -16,14 +16,14 @@ const children = useMemo(() => {
           <div className="project-title-bar-image__container">
             <div className="project-title-bar__container">
               <div className="project-title__text">
-                <h2>Projects</h2>
+                <h2 data-aos="fade-in">Projects</h2>
                 <span data-aos="zoom-in-down">.</span>
               </div>
               <div className='project-header-bar header-bar' data-aos="fade-right"></div>
             </div>
             <img className='project__svg' src='/svg/projects-icon.png' alt="Projects Computer" />
           </div>
-          <p>Check out a few of the projects I've built.</p>
+          <p data-aos="fade-in">Check out a few of the projects I've built.</p>
         </div>
       </div>
       <div className='project-header-bar header-bar' data-aos="fade-left"></div>

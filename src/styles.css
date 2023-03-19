@@ -675,11 +675,6 @@ input:checked + .background-slider:before {
   width: 250px;
 }
 
-.education__svg {
-  /* max-width: 250px;
-  max-height: 250px; */
-}
-
 .education__title-tech {
   display: flex;
   flex-direction: column;
@@ -1895,6 +1890,11 @@ body {
     width: 90%;
   }
 
+  .education__languages-top,
+  .education__languages-bottom {
+    gap: 25px;
+  }
+
   .carousel {
     width: 90%;
     box-shadow:
@@ -1965,8 +1965,8 @@ body {
   }
 
   .education__title-tech {
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
   }
 
   .education__title-text {
@@ -1984,7 +1984,12 @@ body {
   .education__title-skills {
     width: 100%;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
+  }
+
+  .education__skills-list {
+    flex-direction: column;
+    gap: 0;
   }
 
   .form-container {
@@ -2098,6 +2103,19 @@ body {
     0 2.5px 17.5px rgba(0, 0, 0, 0.078),
     0 4px 33px rgba(0, 0, 0, 0.086),
     0 9px 21px rgba(0, 0, 0, 0.13);
+  }
+
+  .education__languages {
+    flex-direction: row;
+    justify-content: center;
+    align-self: center;
+    gap: 75px;
+  }
+
+  .education__languages-top,
+  .education__languages-bottom {
+    display: inherit;
+    flex-direction: column;
   }
 
   .carousel-project__container {
