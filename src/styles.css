@@ -1610,10 +1610,19 @@ select:autofill:focus {
   border-top: 1px solid var(--primary);
 }
 
+#profile-link {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: baseline;
+  gap: 5px;
+  font-size: 20px;
+}
+
 .contact-info-div {
   display: inherit;
   justify-content: space-evenly;
-  gap: 150px;
+  gap: 50px;
   flex-grow: 1;
 }
 
@@ -1650,7 +1659,7 @@ select:autofill:focus {
 }
 
 .contact-info svg{
-  padding: 5px 2px 5px 0;
+  padding: 0;
 }
 
 /* ------------------------- Light Mode ------------------------- */
