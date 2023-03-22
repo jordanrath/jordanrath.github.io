@@ -6,9 +6,6 @@ import { Classic } from "@theme-toggles/react"
 const ThemeButton = () => {
     const [darkMode, setDarkMode] = useState(false);
 
-    const lm = <span className="material-symbols-outlined icon__bold">light_mode</span>; 
-    const dm =  <span className="material-symbols-outlined icon__bold">dark_mode</span>;    
-    
   return (
     <>
         <ThemeContext.Consumer>
