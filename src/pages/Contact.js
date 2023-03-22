@@ -1,6 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 
  const Contact = () => {
+  const [characters, setCharacters] = useState(0);
+
 return (
   <section className='contact-section' id='contact'>
     <div className="contact-header__container">
@@ -24,11 +26,12 @@ return (
             </label> 
             <input type="email" id="email" placeholder='Enter an email...' name="email" required />
         </div>
-          <div className="contact-form__title">
-            <label htmlFor="message">
-              Message
-            </label>
-            <textarea id="message" name="message" placeholder='Write me a message...' required />
+        <div className="contact-form__title">
+          <label htmlFor="message">
+            Message
+          </label>
+          <textarea id="message" name="message" placeholder='Write me a message...' maxLength={1000} onChange={(e) => setCharacters(e.currentTarget.value.length)} required />
+          {characters > 0 ? `${characters}/1000` : ""}
         </div>
         <div className='btn-container'> 
           <button type="submit" className='btn'>Submit</button>
