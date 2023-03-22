@@ -704,7 +704,7 @@ input:checked + .background-slider:before {
 .education__languages-bottom {
   display: inherit;
   font-size: 18px;
-  gap: 40px;
+  gap: 25px;
 }
 
 .slash {
@@ -1864,7 +1864,7 @@ body {
   }
 }
 
-@media only screen and (max-width: 1050px) {
+@media only screen and (max-width: 1060px) {
   .sections {
     width: 540px;
   }
