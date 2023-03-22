@@ -64,6 +64,7 @@ export const ProjectData = [
         subtitle: 'React - CSS',
         title: 'Weather App',
         description: 'Built with React and CSS the app features backend API calls to provide geolocation updated by zip code or city.  The app features reusable components and displays different backgrounds depending on the weather.',
+        href: "https://jordanrath.github.io/weather-app/",
         github: "https://github.com/jordanrath/weather-app",
         images: [                
             {
@@ -81,6 +82,7 @@ export const ProjectData = [
         subtitle: 'React - CSS - Stripe',
         title: 'SuperM',
         description: 'Built with React and CSS navigate through the store and add or remove items to and from your cart.  When you\'re ready, you will be sent to checkout with Stripe integration.',
+        href: "https://jordanrath.github.io/supermarket/",
         github: "https://github.com/jordanrath/supermarket",
         images: [                
             {
@@ -110,6 +112,7 @@ export const ProjectData = [
         subtitle: 'JavaScript - HTML - CSS',
         title: 'Band Website',
         description: 'Built with JavaScript, HTML5 and CSS.  It features an embedded video, links to buy tickets, social media and a functional shopping cart.',
+        href: "https://jordanrath.github.io/band-store-project/",
         github: "https://github.com/jordanrath/band-store-project",
         images: [
             {
