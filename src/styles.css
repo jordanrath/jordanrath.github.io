@@ -864,6 +864,7 @@ input:checked + .background-slider:before {
   min-height: 550px;
   overflow: hidden;
   position: relative;
+  border-radius: 12px;
   box-shadow:
   0 -2.5px 2.2px rgba(0, 0, 0, 0.04),
   0 -8.4px 15.8px rgba(0, 0, 0, 0.05),
@@ -1315,6 +1316,10 @@ input:checked + .background-slider:before {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  border-bottom: 1px solid var(--secondary);
+}
+
+.light-mode .ReactModal__Overlay .modal__title {
   border-bottom: 1px solid var(--primary-variant-lm);
 }
 
