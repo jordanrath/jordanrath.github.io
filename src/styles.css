@@ -932,6 +932,8 @@ input:checked + .background-slider:before {
 .projects-image.loaded {
   max-width: 540px;
   max-height: 550px;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
 }
 
 .projects__carousel {
@@ -1286,9 +1288,15 @@ input:checked + .background-slider:before {
   user-select: none;
 }
 
+.ReactModal__Content {
+  border-radius: 12px;
+}
+
 .ReactModal__Overlay .carousel {
   width: 100%;
   height: 100%;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
 }
 
 .ReactModal__Overlay .carousel-project {
@@ -2112,7 +2120,7 @@ body {
     0 -.9px 5.3px rgba(0, 0, 0, 0.05),
     0 -1px 20px rgba(0, 0, 0, 0.16),
     0 2.5px 17.5px rgba(0, 0, 0, 0.078),
-    0 4px 33px rgba(0, 0, 0, 0.086),
+    0 4px 33px rgba(0, 0, 0, 0.086),ReactModal__Content
     0 9px 21px rgba(0, 0, 0, 0.13);
   }
 
