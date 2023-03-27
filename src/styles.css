@@ -951,6 +951,11 @@ input:checked + .background-slider:before {
   z-index: 2;
   background-color: var(--background-secondary-dm);
   bottom: 0;
+  border-bottom-right-radius: 12px;
+}
+
+.ReactModal__Content .carousel__nav {
+  border-bottom-right-radius: unset;
 }
 
 .carousel__nav .left-arrow {
