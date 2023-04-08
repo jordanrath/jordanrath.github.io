@@ -12,7 +12,7 @@ export const ProjectData = [
         github: "https://github.com/jordanrath/messaging-app",
         images: [
             {
-                image: '/projectImages/MessagingApp.png',
+                image: '/projectImages/messaging-appModal.png',
                 alt: 'Messaging app chatroom page',
             },
             {
@@ -58,7 +58,7 @@ export const ProjectData = [
     {
         id: 3,
         internalName: 'weatherApp',
-        imageShown: '/projectImages/Weather.png',
+        imageShown: '/projectImages/weatherAppDay.png',
         placeholderImage: '',
         alt: 'React Weather App',
         subtitle: 'React - CSS',
@@ -68,7 +68,15 @@ export const ProjectData = [
         github: "https://github.com/jordanrath/weather-app",
         images: [                
             {
-                image: '/modalImages/weatherApp.png',
+                image: '/modalImages/weatherAppDayModal.png',
+                alt: 'Weather App main page.',
+            },
+            {
+                image: '/modalImages/weatherAppDayModal2.png',
+                alt: 'Weather App main page.',
+            },
+            {
+                image: '/modalImages/weatherAppNightModal.png',
                 alt: 'Weather App main page.',
             },
            ]

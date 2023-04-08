@@ -8,10 +8,16 @@ const Loader = ({dotCount = 5, placeholderText = "JR"}) => {
   const placeholder = placeholderText;
 
   return (
-    <div className='loader-container'>
-      <div className="logo">{placeholder}</div>
-      <div className="loader">{dots}</div>
-    </div>
+    <>
+      <div className="bar__top"></div>
+      <div className="bar__left"></div>
+      <div className="bar__right"></div>
+      <div className="bar__bottom"></div>
+      <div className='loader-container'>
+        <div className="logo">{placeholder}</div>
+        <div className="loader">{dots}</div>
+      </div>
+    </>
   )
 }
 
