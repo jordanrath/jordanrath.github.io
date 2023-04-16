@@ -549,6 +549,7 @@ input:checked + .background-slider:before {
   color: var(--secondary-lm);
   font-size: 70px;
   text-shadow: none;
+  user-select: none;
 }
 
 .about-div h3 {
@@ -1022,6 +1023,7 @@ img.projects-image.loaded {
   margin: 0;
   font-weight: 700;
   text-decoration: none;
+  user-select: none;
 }
 
 .carousel-project__btn:hover {
@@ -1064,6 +1066,7 @@ img.projects-image.loaded {
   font-size: 50px;
   color: var(--secondary-lm);
   text-shadow: none;
+  user-select: none;
 }
 
 .project-title-bar-image__container {
@@ -1107,6 +1110,7 @@ img.projects-image.loaded {
 
 .project__svg {
   width: 250px;
+  user-select: none;
 }
 
 .projects-div-frame {
@@ -1500,16 +1504,19 @@ img.projects-image.loaded {
 .contact-title__text span {
   font-size: 50px;
   color: var(--secondary-lm);
+  user-select: none;
 }
 
 .contact__svg {
   width: 250px;
+  user-select: none;
 }
 
 .contact-form__title {
   display: inherit;
   flex-direction: column;
   width: 100%;
+  user-select: none;
 }
 
 input[type=text],
@@ -1601,7 +1608,8 @@ select:autofill:focus {
   background-color: var(--primary);
   float: right;
   cursor: pointer;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  user-select: none;
 }
 
 .btn:hover {
