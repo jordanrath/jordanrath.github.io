@@ -12,7 +12,7 @@ export const ProjectData = [
         github: "https://github.com/jordanrath/messaging-app",
         images: [
             {
-                image: '/projectImages/messaging-appModal.png',
+                image: '/modalImages/messaging-appModal.png',
                 alt: 'Messaging app chatroom page',
             },
             {
