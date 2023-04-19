@@ -933,12 +933,12 @@ input:checked + .background-slider:before {
 .projects-image.loaded {
   max-width: 540px;
   max-height: 550px;
-  border-bottom-left-radius: 12px;
+  /* border-bottom-left-radius: 12px; */
   border-bottom-right-radius: 12px;
 }
 
 img.projects-image.loaded {
-  border-bottom-left-radius: 12px;
+  /* border-bottom-left-radius: 12px; */
   border-bottom-right-radius: 12px;
 }
 
@@ -1955,6 +1955,12 @@ body {
     0 2.5px 17.5px rgba(0, 0, 0, 0.078),
     0 4px 33px rgba(0, 0, 0, 0.086),
     0 9px 21px rgba(0, 0, 0, 0.13);
+  }
+
+  .projects-image.loaded,
+  img.projects-image.loaded {
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
   }
 
   .carousel-project {
