@@ -1,6 +1,3 @@
-//enum enumeration or dictionary
-//record in the array
-
 export const EducationData = [
       {
             imageShown: '/images/ReactCert.png',

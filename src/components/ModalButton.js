@@ -1,8 +1,4 @@
-import React from 'react'
-import { useCallback } from 'react';
-import { useMemo } from 'react';
-import { useContext } from 'react';
-import { useState } from 'react';
+import React, { useCallback, useMemo, useContext, useState } from 'react';
 import { AppContext } from '../contexts/appData';
 import Modal from './Modal';
 
@@ -62,4 +58,4 @@ const ModalButton = (props) => {
   )
 }
 
-export default ModalButton
+export default ModalButton;

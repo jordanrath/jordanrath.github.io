@@ -32,8 +32,4 @@ const NavbarLink = (props) => {
   )
 }
 
-export default NavbarLink
-
-
-
-// create useEffect and useState to set props on the a tags... scroll detection
+export default NavbarLink;

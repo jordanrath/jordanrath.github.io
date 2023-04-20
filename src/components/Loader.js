@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 const Loader = ({dotCount = 5, placeholderText = "JR"}) => {
 
@@ -18,7 +18,7 @@ const Loader = ({dotCount = 5, placeholderText = "JR"}) => {
         <div className="loader">{dots}</div>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default Loader
+export default Loader;

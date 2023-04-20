@@ -20,4 +20,4 @@ export const links = [
       text: 'CONTACT',
       url: '#contact',
     },
-  ]
+  ];

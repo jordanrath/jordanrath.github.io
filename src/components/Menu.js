@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 const Menu = (props) => {
     const { menuOpen, onClick, showMenu } = props;
@@ -19,8 +19,7 @@ const Menu = (props) => {
             ""
         }
     </>
-  )
-}
+  );
+};
 
-
-export default Menu
+export default Menu;

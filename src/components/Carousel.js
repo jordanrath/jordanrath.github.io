@@ -142,34 +142,13 @@ const memoizedMap = useMemo(() => {
 
 if (!Array.isArray(data) || data.length <= 0) {
     return null;
-}
+};
 
     return (
         <>
             {memoizedMap}
         </>
-    )
+    );
 };
 
 export default Carousel;
-
-
-// <div className='modal__title'>
-// <h2>{subtitle}</h2>
-// <h1>{title}</h1>
-// </div>
-// <div className='modal__description'>
-// <p>
-//   {description}
-// </p>
-// </div>
-// <div className='modal-btn__container'>
-// <div className='modal-btn__navigate-container'>
-//   <a href={href} target="_blank" rel="noreferrer">
-//     <button  className='modal-btn__navigate'>VIEW PROJECT</button>
-//   </a>
-// </div>
-// <div className='modal-btn__close-container'>
-//   <button onClick={handleCloseModal} className='modal-btn__close'>X</button>
-// </div>
-// </div> 

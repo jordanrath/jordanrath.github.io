@@ -20,5 +20,5 @@ export default function AppDataProvider({ children }) {
     <AppContext.Provider value={appDataContext}>
       {children}
     </AppContext.Provider>
-  )
-}
+  );
+};

@@ -933,12 +933,10 @@ input:checked + .background-slider:before {
 .projects-image.loaded {
   max-width: 540px;
   max-height: 550px;
-  /* border-bottom-left-radius: 12px; */
   border-bottom-right-radius: 12px;
 }
 
 img.projects-image.loaded {
-  /* border-bottom-left-radius: 12px; */
   border-bottom-right-radius: 12px;
 }
 
@@ -1131,7 +1129,10 @@ img.projects-image.loaded {
   min-width: 300px;
   max-height: 300px;
   max-width: 390px;
-  box-shadow: inset 0 0 0 1px rgb(255 255 255 / 20%), 0 4px 8px rgb(17 20 24 / 40%), 0 18px 46px 6px rgb(17 20 24 / 40%);
+  box-shadow: inset 
+  0 0 0 1px rgb(255 255 255 / 20%), 
+  0 4px 8px rgb(17 20 24 / 40%), 
+  0 18px 46px 6px rgb(17 20 24 / 40%);
 }
 
 .project-img:hover {
@@ -1213,31 +1214,6 @@ img.projects-image.loaded {
 .project:hover .project-img{
   opacity: 0.1;
 }
-
-/* .project:hover {
-  border: 1px solid var(--primary);
-  box-shadow: inset 0 0 0 1px rgb(255 255 255 / 20%), 0 4px 8px #1D6ACF, 0 18px 46px 6px rgb(17 20 24 / 40%);;
-  background-image: linear-gradient(
-      to bottom,
-      hsla(0, 0%, 0%, 0) 0%,
-      hsla(0, 0%, 0%, 0.009) 11.7%,
-      hsla(0, 0%, 0%, 0.034) 22.1%,
-      hsla(0, 0%, 0%, 0.072) 31.2%,
-      hsla(0, 0%, 0%, 0.123) 39.4%,
-      hsla(0, 0%, 0%, 0.182) 46.6%,
-      hsla(0, 0%, 0%, 0.249) 53.1%,
-      hsla(0, 0%, 0%, 0.320) 58.9%,
-      hsla(0, 0%, 0%, 0.394) 64.3%,
-      hsla(0, 0%, 0%, 0.468) 69.3%,
-      hsla(0, 0%, 0%, 0.540) 74.1%,
-      hsla(0, 0%, 0%, 0.607) 78.8%,
-      hsla(0, 0%, 0%, 0.668) 83.6%,
-      hsla(0, 0%, 0%, 0.721) 88.7%,
-      hsla(0, 0%, 0%, 0.762) 94.1%,
-      hsla(0, 0%, 0%, 0.790) 100%
-    );
-    transform: translateY(-1.8%);
-} */
 
 .project p {
   overflow: hidden;
@@ -1346,7 +1322,7 @@ img.projects-image.loaded {
 }
 
 .light-mode .ReactModal__Overlay .modal__title {
-  border-bottom: 1px solid var(--primary-variant-lm);
+  border-bottom: 1px solid var(--secondary-lm);
 }
 
 .ReactModal__Overlay .modal__title h1 {
@@ -1389,15 +1365,13 @@ img.projects-image.loaded {
   flex-direction: column;
   justify-content: flex-end;
   align-items: flex-end;
-  max-width: 150px;
-  min-width: 100px; 
   padding: 0 15px 0 0; 
 }
 
 .modal-btn__navigate-flex {
-  width: 75%;
+  width: 100%;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
   gap: 100px;
 }
@@ -1411,9 +1385,9 @@ img.projects-image.loaded {
   display: flex;
   justify-content: center;
   margin: 0;
-  background-color: var(--background-secondary);
+  background-color: var(--primary-variant);
   color: var(--on-primary);
-  border: 1px solid var(--primary);
+  border: 1px solid var(--primary-variant);
   border-radius: 2px;
   height: fit-content;
   max-width: 150px;
@@ -1425,8 +1399,9 @@ img.projects-image.loaded {
 }
 
 .modal-btn__navigate:hover {
-  border: 1px dotted var(--secondary);
-  color: var(--secondary);
+  background-color: var(--secondary);
+  border: 1px solid var(--secondary);
+  color: var(--on-secondary);
 }
 
 .modal-btn__close {
@@ -1523,7 +1498,7 @@ input[type=text],
 input[type=email] {
   margin: 0 0 3px;
   padding: 10px 10px;
-  border-radius: 2px;
+  /* border-radius: 2px; */
   min-height: 30px;
   font-size: 20px;
   color: var(--on-primary);
@@ -1583,6 +1558,36 @@ select:autofill:focus {
   font-size: 20px;
   color: var(--on-primary);
   box-shadow: 0 0 0px 1000px var(--background-dm) inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+.light-mode input:-webkit-autofill,
+.light-mode input:-webkit-autofill:hover, 
+.light-mode input:-webkit-autofill:focus,
+.light-mode textarea:-webkit-autofill,
+.light-mode textarea:-webkit-autofill:hover,
+.light-mode textarea:-webkit-autofill:focus,
+.light-mode select:-webkit-autofill,
+.light-mode select:-webkit-autofill:hover,
+.light-mode select:-webkit-autofill:focus {
+  font-size: 20px;
+  -webkit-text-fill-color: var(--on-secondary);
+  box-shadow: 0 0 0px 1000px var(--background-variant-lm) inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+.light-mode input:autofill,
+.light-mode input:autofill:hover, 
+.light-mode input:autofill:focus,
+.light-mode textarea:autofill,
+.light-mode textarea:autofill:hover,
+.light-mode textarea:autofill:focus,
+.light-mode select:autofill,
+.light-mode select:autofill:hover,
+.light-mode select:autofill:focus {
+  font-size: 20px;
+  color: var(--on-secondary);
+  box-shadow: 0 0 0px 1000px var(--background-variant-lm) inset;
   transition: background-color 5000s ease-in-out 0s;
 }
 
@@ -1796,13 +1801,14 @@ select:autofill:focus {
 }
 
 .light-mode .modal-btn__navigate {
-  background-color: var(--primary-lm);
+  background-color: var(--secondary);
   color: var(--on-secondary);
   border: none;
 }
 
 .light-mode .modal-btn__navigate:hover {
-  background-color: var(--secondary);
+  background-color: var(--secondary-variant);
+  color: var(--on-primary);
 }
 
 .light-mode .modal-btn__close {

@@ -25,6 +25,7 @@ const App = () => {
   let options = {
     threshold: .75,
   };
+  
    const { ref: aboutRef, inView: onAbout } = useInView(options);
    const { ref: imagesRef, inView: onImages } = useInView(options);
    const { ref: projectsRef, inView: onProjects } = useInView(options);
@@ -35,7 +36,7 @@ const App = () => {
      onImages,
      onProjects,
      onContact,
-   }
+   };
 
    return (
     <main id='home'>
@@ -58,7 +59,7 @@ const App = () => {
         <Footer />
       </section> 
     </main>
-   )
-}
+   );
+};
 
  export default App;

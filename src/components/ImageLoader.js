@@ -21,7 +21,7 @@ const ImageLoader = ({ placeholderImage, src, alt, imgClassName, aosImgEffect })
         className={`${imgClassName} ${customClass}`}
       />
     </>
-  )
-}
+  );
+};
 
 export default ImageLoader;

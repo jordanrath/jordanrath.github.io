@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { ThemeContext, themes } from '../contexts/ThemeContext';
-import "@theme-toggles/react/css/Classic.css"
-import { Classic } from "@theme-toggles/react"
+import "@theme-toggles/react/css/Classic.css";
+import { Classic } from "@theme-toggles/react";
 
 const ThemeButton = () => {
     const [darkMode, setDarkMode] = useState(false);
@@ -23,7 +23,7 @@ const ThemeButton = () => {
             )}
         </ThemeContext.Consumer>
     </>
-  )
-}
+  );
+};
 
 export default ThemeButton;

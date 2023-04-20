@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
 import Menu from './Menu';
 
 const MenuOpen = (props) => {
@@ -18,7 +18,7 @@ const MenuOpen = (props) => {
             <button className="menu__buttons" onClick={() => setMenuOpen(!menuOpen)}>{links}</button>
         </div>
     </div>
-  )
-}
+  );
+};
 
-export default MenuOpen
+export default MenuOpen;

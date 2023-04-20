@@ -15,7 +15,7 @@ const Navbar = (props) => {
       left: 0,
       top: location - 64
     })
-  }, [])
+  }, []);
 
   //store the click events in a single useCallback to use them together
   const onClick = useCallback((event) => {
@@ -34,7 +34,7 @@ const Navbar = (props) => {
 
     //render NavBarLink and spread the object {linkProps} into it as props
     return (
-      <NavbarLink {...linkProps} onClick={() => console.log('hi')} />
+      <NavbarLink {...linkProps} />
     )
   });
   
@@ -44,19 +44,16 @@ const Navbar = (props) => {
       <div className="bar__left"></div>
       <div className="bar__right"></div>
       <div className='navbar'>
-        {/* <div data-aos="fade-down" className='nav-title'> */}
-          <div className='nav-title__right'>
-            <ThemeButton />
-            <BackgroundSelector />
-          </div>
-          <div className="nav-title__left">
-            <MenuOpen showMenu={true} links={linkJsx}/>
-            {/* {linkJsx} */}
-          </div>
-        {/* </div> */}
+        <div className='nav-title__right'>
+          <ThemeButton />
+          <BackgroundSelector />
+        </div>
+        <div className="nav-title__left">
+          <MenuOpen showMenu={true} links={linkJsx}/>
+        </div>
       </div>
     </>
   )
-}
+};
 
-export default Navbar
+export default Navbar;

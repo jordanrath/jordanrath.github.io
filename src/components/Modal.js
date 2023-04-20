@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactModal from 'react-modal';
-import Carousel from '../components/Carousel.js'
+import Carousel from '../components/Carousel.js';
 
-ReactModal.setAppElement('#root')
+ReactModal.setAppElement('#root');
 
 const Modal = ({ data, isOpen: openModal, onRequestClose: handleCloseModal }) => {
     const { subtitle, title, images=[], href, github } = (data ?? {});
@@ -37,14 +37,16 @@ const Modal = ({ data, isOpen: openModal, onRequestClose: handleCloseModal }) =>
                 <div className="modal-btn__navigate-flex">
                   <div className='modal-btn__navigate-container'>
                     <a href={href} target="_blank" rel="noreferrer">
-                      {/* See {title} in action! */}
-                      <button  className='modal-btn__navigate'>View Live</button>
+                      <button  className='modal-btn__navigate'>
+                        View Live
+                      </button>
                     </a>
                   </div>
                   <div className="modal-btn__github-container">
                     <a href={github} target="_blank" rel="noreferrer">
-                      {/* Check out {title}'s code. */}
-                      <button  className='modal-btn__navigate'>View Code</button>
+                      <button  className='modal-btn__navigate'>
+                        View Code
+                      </button>
                     </a>
                   </div>
                 </div>
@@ -56,6 +58,6 @@ const Modal = ({ data, isOpen: openModal, onRequestClose: handleCloseModal }) =>
             </ReactModal>
         </div>
     );
-}
+};
 
-export default Modal
+export default Modal;
