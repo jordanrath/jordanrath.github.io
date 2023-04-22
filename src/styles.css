@@ -1866,7 +1866,7 @@ section {
   background-color: var(--background-dm);
 }
 
-#root .light-mode {
+.light-mode #root {
   background-color: var(--background-lm);
 }
 
@@ -1874,7 +1874,7 @@ body {
   background-color: var(--background-dm);
 }
 
-body .light-mode {
+.light-mode body {
   background-color: var(--background-lm);
 }
 
