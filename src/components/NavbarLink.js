@@ -22,11 +22,11 @@ const NavbarLink = (props) => {
   return (
     <>
     <a
-    className={active
-      ? 'isActive' : ''} 
-    href={url} id={id} onClick={onClick}
+      className={active
+        ? 'isActive' : ''} 
+      href={url} id={id} onClick={onClick}
     >
-                {text}
+      {text}
     </a>
     </>
   )
