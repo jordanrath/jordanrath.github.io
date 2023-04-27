@@ -5,7 +5,7 @@ export const EducationData = [
             alt: 'Learn React Certification',
             subtitle: 'Learn React',
             title: 'React Certification',
-            description: 'Dives into the details of React covering everthing from React.createElement to using and creating advanced hooks.'
+            description: 'Dives into the details of React covering everything from React.createElement to using and creating advanced hooks.'
       },
       {
             imageShown: '/images/JsCert.png',
