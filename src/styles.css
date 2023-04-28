@@ -1866,17 +1866,10 @@ section {
   background-color: var(--background-dm);
 }
 
-.light-mode #root {
-  background-color: var(--background-lm);
-}
-
 body {
   background-color: var(--background-dm);
 }
 
-.light-mode body {
-  background-color: var(--background-lm);
-}
 
 /* ------------------------- Media Queries ------------------------- */
 @media only screen and (max-width: 1440px) {
