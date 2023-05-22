@@ -7,15 +7,15 @@ const NavbarLink = (props) => {
      useEffect(() => {
         if (onAbout && id === 1) {
          setActive(true);
-       } else if (onImages && id === 2) {
-        setActive(true);
-       } else if (onProjects && id === 3) {
-        setActive(true);
-       } else if (onContact && id === 4) {
-        setActive(true);
-       } else {
-         setActive(false);
-       }
+        } else if (onImages && id === 2) {
+         setActive(true);
+        } else if (onProjects && id === 3) {
+         setActive(true);
+        } else if (onContact && id === 4) {
+         setActive(true);
+        } else {
+          setActive(false);
+        }
      }, [onAbout, onImages, onProjects, onContact, id]);
 
   return (
@@ -29,6 +29,6 @@ const NavbarLink = (props) => {
     </a>
     </>
   )
-}
+};
 
 export default NavbarLink;
