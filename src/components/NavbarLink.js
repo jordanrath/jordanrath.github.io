@@ -2,7 +2,16 @@ import React, { useState, useEffect } from 'react'
 
 const NavbarLink = (props) => {
   const [active, setActive] = useState(false);
-  const {url, id, onClick, text, onAbout, onImages, onProjects, onContact} = props;
+  const {
+      url, 
+      id, 
+      onClick, 
+      text, 
+      onAbout, 
+      onImages, 
+      onProjects, 
+      onContact
+    } = props;
   
      useEffect(() => {
         if (onAbout && id === 1) {
