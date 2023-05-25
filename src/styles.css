@@ -59,13 +59,13 @@ body {
   --white: #fff;
   --red: #CF291D;
   --blue: #1D6ACF;
-  /* typography */
+
   --defaultFontSize: 87.5%;
   --headingFont: 'Inconsolata', monospace;
   --bodyFont: 'Montserrat', sans-serif;
   --smallText: 0.8em;
   --extraSmallText: 0.7em;
-  /* rest */
+  
   --backgroundColor: var(--grey-50);
   --textColor: var(--grey-1000);
   --borderRadius: 0.25rem;
