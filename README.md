@@ -1,4 +1,4 @@
-# Name of Project
+# Jordan's Portfolio
 
 ## Table of Contents
 
@@ -20,6 +20,7 @@
 ### Built With
 
 <!-- TODO: List any MAJOR libraries/frameworks (e.g. React, Tailwind) with links to their homepages. -->
+Built with JavaScript, React, HTML, and CSS.
 
 ## Features
 
@@ -28,6 +29,7 @@
 ## Contact
 
 <!-- TODO: Include icons and links to your RELEVANT, PROFESSIONAL 'DEV-ORIENTED' social media. LinkedIn and dev.to are minimum. -->
+https://www.linkedin.com/in/jordan-rath-521660264/
 
 ## Acknowledgements
 
