@@ -30,7 +30,8 @@ Built with JavaScript, React, HTML, and CSS.
 <br>
 ● Themed with CSS using flexbox including media queries to present an application scalable with display size.
 <br>
-● Customized with reusable React components and modernized React context, refs and hooks.<br>
+● Customized with reusable React components and modernized React context, refs and hooks.
+<br>
 ● Incorporated external libraries to introduce new functionality and improve user experience.
 
 
